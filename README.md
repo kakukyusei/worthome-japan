@@ -1,21 +1,272 @@
-```txt
+# 株式会社萬橡和 - 公式ウェブサイト
+
+## プロジェクト概要
+
+株式会社萬橡和(ばんしょうわ / WORTHOME)の公式ウェブサイト。香港萬橡和國際有限公司のグループ会社として、鉄鋼製品の販売を行う企業のコーポレートサイトです。
+
+## 🌐 サイトURL
+
+- **開発環境**: https://3000-ixl96wbdqi6qo3it2rr0u-583b4d74.sandbox.novita.ai
+- **本番環境**: (Cloudflare Pagesにデプロイ後に追加)
+
+## ✨ 主な機能
+
+### 実装済み機能
+
+1. **ホームページ**
+   - 企業紹介
+   - 3つの理念の紹介
+   - 会社基本情報
+
+2. **会社情報セクション**
+   - 株式会社萬橡和について (会社概要、社名の由来、会社情報)
+   - 企業理念 (3つの柱の詳細説明)
+   - 代表者挨拶 (社長メッセージと経歴)
+
+3. **事業内容セクション**
+   - パートナーシップ (主要パートナー、連携体制)
+   - 取引モデル (8ステップの取引フロー詳細)
+
+4. **製品情報セクション**
+   - 取り扱う製品一覧
+   - 本鋼普通鋼 (JIS認証製品の詳細)
+   - 本鋼特殊鋼 (車輪用鋼、大梁用鋼、ラインパイプ用鋼、耐候性鋼)
+   - 攀鋼特殊鋼 (工具鋼、構造用鋼、軸受鋼、耐熱・耐食鋼、ステンレス)
+   - 攀鋼チタン・チタン合金 (スポンジチタン、インゴット、丸棒、板、線材)
+
+5. **お問い合わせ**
+   - お問い合わせフォーム (会社名、氏名、メール、電話、種類、内容)
+   - 会社連絡先情報
+
+### 機能的特徴
+
+- **レスポンシブデザイン**: モバイル、タブレット、デスクトップに対応
+- **ドロップダウンメニュー**: 階層的なナビゲーション
+- **モバイルメニュー**: ハンバーガーメニュー対応
+- **スムーズスクロール**: アンカーリンクのスムーズな遷移
+- **アニメーション効果**: スクロール時の要素表示アニメーション
+- **フォームバリデーション**: お問い合わせフォームの入力検証
+
+## 🏗️ 技術スタック
+
+- **フレームワーク**: Hono (v4.10.3)
+- **ランタイム**: Cloudflare Workers
+- **ビルドツール**: Vite (v6.3.5)
+- **デプロイ**: Cloudflare Pages
+- **スタイル**: カスタムCSS (TailwindCDN利用)
+- **アイコン**: Font Awesome 6.4.0
+- **プロセス管理**: PM2 (開発環境)
+
+## 📁 プロジェクト構成
+
+\`\`\`
+webapp/
+├── src/
+│   ├── index.tsx              # メインアプリケーション (ルーティング)
+│   ├── templates/
+│   │   └── layout.ts          # ナビゲーション・フッター・レイアウト
+│   └── routes/
+│       ├── pages.ts           # 会社情報ページコンテンツ
+│       ├── pages2.ts          # 事業内容・製品一覧・お問い合わせ
+│       └── products.ts        # 製品詳細ページコンテンツ
+├── public/
+│   └── static/
+│       ├── styles.css         # メインスタイルシート
+│       └── app.js             # フロントエンドJavaScript
+├── dist/                      # ビルド出力 (Cloudflareデプロイ用)
+├── ecosystem.config.cjs       # PM2設定
+├── package.json               # 依存関係とスクリプト
+├── vite.config.ts             # Vite設定
+├── wrangler.jsonc             # Cloudflare Workers設定
+└── README.md                  # このファイル
+\`\`\`
+
+## 🚀 開発ガイド
+
+### 必要環境
+
+- Node.js 18以上
+- npm 9以上
+
+### セットアップ
+
+\`\`\`bash
+# 依存関係のインストール (既にインストール済み)
+cd /home/user/webapp
 npm install
-npm run dev
-```
 
-```txt
-npm run deploy
-```
+# ビルド
+npm run build
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+# 開発サーバー起動 (PM2使用)
+fuser -k 3000/tcp 2>/dev/null || true
+pm2 start ecosystem.config.cjs
 
-```txt
-npm run cf-typegen
-```
+# サーバー確認
+curl http://localhost:3000
+\`\`\`
 
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
+### 利用可能なスクリプト
 
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+\`\`\`bash
+npm run build          # プロジェクトをビルド
+npm run dev:sandbox    # Wranglerで開発サーバー起動
+npm run preview        # ビルド後のプレビュー
+npm run clean-port     # ポート3000をクリーンアップ
+npm run test           # サーバーへのcurlテスト
+npm run deploy         # Cloudflare Pagesにデプロイ
+npm run deploy:prod    # 本番環境にデプロイ
+\`\`\`
+
+### PM2コマンド
+
+\`\`\`bash
+pm2 list                       # サービス一覧
+pm2 logs webapp --nostream     # ログ確認
+pm2 restart webapp             # サービス再起動
+pm2 stop webapp                # サービス停止
+pm2 delete webapp              # PM2から削除
+\`\`\`
+
+## 📄 ページ構成
+
+### メインメニュー
+
+1. **ホーム** (\`/\`)
+2. **会社情報**
+   - 株式会社萬橡和について (\`/about\`)
+   - 企業理念 (\`/philosophy\`)
+   - 代表者挨拶 (\`/message\`)
+3. **事業内容**
+   - パートナーシップ (\`/partnership\`)
+   - 取引モデル (\`/business-model\`)
+4. **製品情報**
+   - 取り扱う製品 (\`/products\`)
+   - 本鋼普通鋼 (\`/products/bengang-steel\`)
+   - 本鋼特殊鋼 (\`/products/bengang-special\`)
+   - 攀鋼特殊鋼 (\`/products/pangang-special\`)
+   - 攀鋼チタン・チタン合金 (\`/products/pangang-titanium\`)
+5. **お問い合わせ** (\`/contact\`)
+
+## 🎨 デザイン仕様
+
+### カラーパレット
+
+- **プライマリーカラー**: #1a4d8f (ダークブルー)
+- **セカンダリーカラー**: #2563eb (ブライトブルー)
+- **アクセントカラー**: #dc2626 (レッド)
+- **テキストカラー**: #374151 (ダークグレー)
+- **背景カラー**: #f3f4f6 (ライトグレー)
+
+### レスポンシブブレークポイント
+
+- **デスクトップ**: 769px以上
+- **タブレット**: 481px - 768px
+- **モバイル**: 480px以下
+
+## 📊 データアーキテクチャ
+
+### データソース
+
+すべてのコンテンツは、萬橡和の会社案内PPT(2025年10月版)から抽出されています:
+
+- 会社概要情報
+- 企業理念(3つの柱)
+- 代表者プロフィールと挨拶
+- パートナーシップ関係図
+- 取引フロー(8ステップ)
+- 製品仕様とグレード情報
+
+### ストレージ
+
+- **静的ファイル**: Cloudflare Pagesで配信
+- **動的データ**: 現在は静的コンテンツのみ (将来的にAPIやデータベース統合可能)
+
+## 🔧 カスタマイズガイド
+
+### コンテンツの更新
+
+1. **ページコンテンツ**: \`src/routes/pages.ts\`, \`pages2.ts\`, \`products.ts\`を編集
+2. **スタイル**: \`public/static/styles.css\`を編集
+3. **JavaScript**: \`public/static/app.js\`を編集
+4. **ナビゲーション/フッター**: \`src/templates/layout.ts\`を編集
+
+### ビルドとテスト
+
+\`\`\`bash
+# コンテンツ更新後
+npm run build
+
+# PM2で再起動
+pm2 restart webapp
+
+# 確認
+curl http://localhost:3000
+\`\`\`
+
+## 🚢 デプロイ
+
+### Cloudflare Pagesへのデプロイ
+
+\`\`\`bash
+# 1. Cloudflare API認証を設定
+# (setup_cloudflare_api_key ツールを使用)
+
+# 2. ビルド
+npm run build
+
+# 3. Cloudflareプロジェクトの作成 (初回のみ)
+npx wrangler pages project create webapp \\
+  --production-branch main \\
+  --compatibility-date 2025-10-29
+
+# 4. デプロイ
+npm run deploy:prod
+\`\`\`
+
+## 📞 連絡先
+
+- **会社名**: 株式会社萬橡和 (WORTHOME)
+- **所在地**: 大阪市西区阿波座2-1-1 CAMCO西本町ビル10F (鞍鋼ジャパン内)
+- **Web**: https://worthome.co.jp
+
+## 📝 開発履歴
+
+### Version 1.0.0 (2025-10-29)
+
+- ✅ 初期リリース
+- ✅ 全11ページの実装完了
+- ✅ レスポンシブデザイン対応
+- ✅ モバイルメニュー実装
+- ✅ アニメーション効果追加
+- ✅ お問い合わせフォーム実装
+
+## 🔮 今後の開発予定
+
+1. **バックエンド統合**
+   - お問い合わせフォームのAPI連携
+   - メール送信機能の実装
+
+2. **コンテンツ拡充**
+   - 製品詳細スペック表の追加
+   - 実績・事例紹介ページ
+   - ニュース・お知らせ機能
+
+3. **機能強化**
+   - 多言語対応 (英語、中国語)
+   - PDF資料ダウンロード
+   - 製品カタログ検索機能
+
+4. **SEO最適化**
+   - メタタグの最適化
+   - サイトマップ生成
+   - 構造化データの実装
+
+## 📜 ライセンス
+
+© 2025 WortHome Int'l Co. All rights reserved.
+
+---
+
+**開発**: GenSpark AI
+**最終更新**: 2025-10-29
