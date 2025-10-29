@@ -4,8 +4,6 @@
 export const homeContent = `
 <section class="hero">
     <div class="hero-content">
-        <h2 class="hero-title">鉄鋼業界の新たな価値を創造</h2>
-        <p class="hero-subtitle">アジアの発展と調和を目指す鉄鋼商社</p>
         <div class="hero-features">
             <div class="feature-item">
                 <i class="fas fa-handshake"></i>

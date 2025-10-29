@@ -3,8 +3,8 @@ export const getNavbar = (activePage: string = '') => `
 <nav class="navbar">
     <div class="container">
         <div class="nav-brand">
+            <img src="https://page.gensparksite.com/v1/base64_upload/b3f6d59a65ac30eda70a4c876e964049" alt="WORTHOME" class="nav-brand-logo">
             <h1>株式会社萬橡和</h1>
-            <p class="nav-subtitle">WORTHOME</p>
         </div>
         <button class="mobile-menu-toggle" id="mobileMenuToggle">
             <i class="fas fa-bars"></i>
