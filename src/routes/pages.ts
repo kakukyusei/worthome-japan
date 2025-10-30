@@ -40,31 +40,6 @@ export const homeContent = `
     </div>
 </section>
 
-<section class="section-with-bg" style="background-image: url('https://www.shutterstock.com/image-photo/shafts-sunlight-filter-through-misty-260nw-2525988579.jpg');">
-    <div class="container">
-        <h2 class="section-title">私たちの理念</h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                <div class="philosophy-card">
-                    <i class="fas fa-leaf" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">自然との調和</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.6;">グリーン鉱山ビジョンに基づいた持続可能な事業</p>
-                </div>
-                <div class="philosophy-card">
-                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">信頼の構築</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.6;">パートナー企業との誠実な関係性</p>
-                </div>
-                <div class="philosophy-card">
-                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">品質保証</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.6;">世界基準の製品品質と安定供給</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="cta-section">
     <div class="container">
         <h2>お問い合わせ</h2>
