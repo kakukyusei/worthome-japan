@@ -24,11 +24,42 @@ export const homeContent = `
 <section class="intro-section">
     <div class="container">
         <h2 class="section-title">株式会社萬橡和について</h2>
-        <div class="intro-content">
-            <p>株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
-            <p>「萬橡和」は、「万象(宇宙・天地のすべて)」に木偏を添えて自然への敬意を示し、日本文化の要でもある「和」を重ねることで、自然の摂理と調和して価値を生む企業姿勢を表しています。</p>
-            <div style="text-align: center; margin-top: 2.5rem;">
-                <a href="/about" class="btn btn-primary">会社情報へ <i class="fas fa-arrow-right"></i></a>
+        
+        <div class="content-with-image">
+            <div class="intro-content">
+                <p>株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
+                <p>「萬橡和」は、「万象(宇宙・天地のすべて)」に木偏を添えて自然への敬意を示し、日本文化の要でもある「和」を重ねることで、自然の摂理と調和して価値を生む企業姿勢を表しています。</p>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="/about" class="btn btn-primary">会社情報へ <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="content-image">
+                <img src="https://cdn.pixabay.com/photo/2017/04/28/09/01/architecture-2267789_1280.jpg" alt="製鉄所の風景" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-with-bg" style="background-image: url('https://www.shutterstock.com/image-photo/shafts-sunlight-filter-through-misty-260nw-2525988579.jpg');">
+    <div class="container">
+        <h2 class="section-title">私たちの理念</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="philosophy-card">
+                    <i class="fas fa-leaf" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">自然との調和</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">グリーン鉱山ビジョンに基づいた持続可能な事業</p>
+                </div>
+                <div class="philosophy-card">
+                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">信頼の構築</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">パートナー企業との誠実な関係性</p>
+                </div>
+                <div class="philosophy-card">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">品質保証</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">世界基準の製品品質と安定供給</p>
+                </div>
             </div>
         </div>
     </div>
@@ -59,20 +90,34 @@ export const aboutContent = `
 <section class="content-section">
     <div class="container">
         <div class="about-content">
-            <h2>グループ会社としての歩み</h2>
-            <p class="lead">株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
-            
-            <div class="content-block">
-                <p>香港萬橡和國際有限公司は2011年から「本鋼集団(ほんこう)」の製品を代理し始め、「本鋼集団」や「鞍鋼(あんこう)集団」等が生産する鉄鋼製品を、インドや韓国など、多くの国々において販売ネットワークを構築してまいりました。</p>
-                <p class="highlight-box">
-                    <i class="fas fa-info-circle"></i>
-                    <strong>重要な合併:</strong> 2021年に本鋼集団と鞍鋼集団が合併し、生産量が世界3位の新しい鞍鋼集団となりました。
-                </p>
+            <div class="content-with-image">
+                <div>
+                    <h2>グループ会社としての歩み</h2>
+                    <p class="lead">株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
+                    
+                    <div class="content-block">
+                        <p>香港萬橡和國際有限公司は2011年から「本鋼集団(ほんこう)」の製品を代理し始め、「本鋼集団」や「鞍鋼(あんこう)集団」等が生産する鉄鋼製品を、インドや韓国など、多くの国々において販売ネットワークを構築してまいりました。</p>
+                        <p class="highlight-box">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>重要な合併:</strong> 2021年に本鋼集団と鞍鋼集団が合併し、生産量が世界3位の新しい鞍鋼集団となりました。
+                        </p>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="https://www.sbwusa.com/wp-content/uploads/2022/01/shipping_ports_supply_chain_bottlenecks.jpg" alt="グローバル物流ネットワーク" loading="lazy">
+                </div>
             </div>
 
-            <h2>日本での展開</h2>
-            <div class="content-block">
-                <p>日本においてもパートナー企業たちとの連携を一層強化し、生活基盤であるアジアのより良い発展に、鉄鋼業界に携わる一員として、力を合わせて貢献してまいりたいと願っております。</p>
+            <div class="content-with-image reverse">
+                <div>
+                    <h2>日本での展開</h2>
+                    <div class="content-block">
+                        <p>日本においてもパートナー企業たちとの連携を一層強化し、生活基盤であるアジアのより良い発展に、鉄鋼業界に携わる一員として、力を合わせて貢献してまいりたいと願っております。</p>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="https://thumbs.dreamstime.com/b/trust-promise-concept-honest-lawyer-partner-professional-team-make-law-business-agreement-complete-deal-ethics-people-186323841.jpg" alt="信頼のパートナーシップ" loading="lazy">
+                </div>
             </div>
 
             <h2>社名の由来</h2>

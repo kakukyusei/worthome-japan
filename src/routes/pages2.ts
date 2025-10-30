@@ -44,9 +44,10 @@ export const partnershipContent = `
             </div>
         </div>
 
-        <div class="content-block">
-            <h2>主要パートナー</h2>
-            <div class="partners-grid">
+        <div class="visual-section" style="background-image: url('https://www.6sigma.us/wp-content/uploads/2024/09/quality-inspection.webp'); background-size: cover; background-position: center;">
+            <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 8px;">
+                <h2>主要パートナー</h2>
+                <div class="partners-grid">
                 <div class="info-item">
                     <i class="fas fa-industry"></i>
                     <h3>鞍鋼集団</h3>
@@ -78,6 +79,7 @@ export const partnershipContent = `
                     <p>日本国内の物流パートナーネットワーク。</p>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="integrated-system">
@@ -111,11 +113,21 @@ export const businessModelContent = `
     <div class="container">
         <h2 class="section-title">お客様に安心をお届けする取引フロー</h2>
         
-        <div class="content-block">
-            <p class="lead">お見積・ご請求は円建て / 関税込・持込渡し(関税立替) / 指定場所へ配送</p>
-            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem;">
-                <strong>役割分担:</strong> 品質=鞍鋼集団 / 輸送・通関=COSCO / 窓口=萬橡和
-            </p>
+        <div class="content-with-image">
+            <div class="content-block">
+                <p class="lead">お見積・ご請求は円建て / 関税込・持込渡し(関税立替) / 指定場所へ配送</p>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                    <strong>役割分担:</strong> 品質=鞍鋼集団 / 輸送・通関=COSCO / 窓口=萬橡和
+                </p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 円建て取引で為替リスク軽減</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 関税立替で煩雑な手続き不要</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 指定場所へ直接配送</li>
+                </ul>
+            </div>
+            <div class="content-image">
+                <img src="https://scm.ncsu.edu/wp-content/uploads/sites/29/2021/10/LA-Port-16x9-1.jpg" alt="グローバル物流" loading="lazy">
+            </div>
         </div>
 
         <div class="process-steps">
@@ -237,6 +249,10 @@ export const productsContent = `
 <section class="content-section">
     <div class="container">
         <h2 class="section-title">高品質な鉄鋼製品を幅広くご提供</h2>
+        
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+            <p style="font-size: 1.05rem; line-height: 1.8;">鞍鋼集団の主要製品を取り扱い、お客様のニーズに合わせた最適なソリューションを提供します。JIS認証取得済みの普通鋼から、高精度な特殊鋼、軽量・高強度のチタン合金まで、幅広い製品ラインナップを取り揃えております。</p>
+        </div>
         
         <div class="products-grid">
             <div class="product-card">
