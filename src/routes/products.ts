@@ -224,103 +224,244 @@ export const bengangSpecialContent = `
 
 // 攀鋼特殊鋼详情
 export const pangangSpecialContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>攀鋼特殊鋼</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
+<section class="page-header" style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(196, 30, 58, 0.85)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ThyssenKrupp_Duisburg_016.jpg/1200px-ThyssenKrupp_Duisburg_016.jpg'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
+    <div class="container" style="text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">攀鋼特殊鋼（Pangang Special Steel）</h1>
+        <p style="font-size: 1.4rem; margin-bottom: 1rem; opacity: 0.95;">高機能特殊鋼とチタン素材のリーディングメーカー</p>
+        <p style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.1em; opacity: 0.9;">品質 × 技術 × 革新で未来の産業を支える</p>
+        <p class="breadcrumb" style="margin-top: 2rem; opacity: 0.9;">
+            <a href="/" style="color: var(--white);">ホーム</a> <i class="fas fa-chevron-right"></i> 
             <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
             <span>攀鋼特殊鋼</span>
         </p>
     </div>
 </section>
 
-<section class="content-section">
+<section class="content-section" style="background: var(--white);">
     <div class="container">
-        <div class="product-detail-header">
-            <h2>攀鋼長城特殊鋼 - 世界最高水準の特殊素材</h2>
-            <p class="lead">工具鋼、構造用鋼、軸受鋼、耐熱・耐食鋼、ステンレスなど多様なグレードを取り揃え、精密加工性と耐久性を兼ね備えています。</p>
+        <h2 class="section-title">会社概要</h2>
+        <div class="content-with-image">
+            <div>
+                <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">鞍鋼集団傘下の高付加価値鋼材メーカー</h3>
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem;">
+                    攀鋼特殊鋼（Pangang Special Steel）は、中国鞍鋼集団傘下の特殊鋼・チタン製品専門メーカーです。攀枝花を中心とした生産拠点において、鉱山から最終製品まで一貫した製造体制を構築しています。
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem;">
+                    <strong>中国西南部最大の特殊鋼・チタン生産拠点</strong>として、航空宇宙、エネルギー、医療、自動車など幅広い産業分野に高品質な素材を供給しています。
+                </p>
+                <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 鉱山から製品までの一貫製造体制</li>
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 航空・エネルギー・医療分野への対応</li>
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 国際標準に準拠した品質管理体制</li>
+                </ul>
+            </div>
+            <div class="content-image">
+                <img src="https://www.seahbesteel.co.kr/eng/resources/images/technology/process_special-steel_f02.png" alt="特殊鋼製造プロセス" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 class="section-title">主力製品紹介</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.05rem; line-height: 1.8;">
+            攀鋼特殊鋼は、多様な産業ニーズに応える幅広い製品ラインナップを提供しています。
+        </p>
+
+        <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="product-card" style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); border-left: 4px solid var(--primary-color);">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <i class="fas fa-atom" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+                <h3 style="text-align: center; font-size: 1.3rem; margin-bottom: 1rem; color: var(--dark-color);">チタン材（Titanium Products）</h3>
+                <p style="line-height: 1.7; margin-bottom: 1rem;">軽量・高強度・優れた耐食性を持つチタン材。航空宇宙、医療機器、化学プラントなど幅広い分野で活用されています。</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> スポンジチタン</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> チタンインゴット</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> チタン丸棒・板・線材</li>
+                </ul>
+            </div>
+
+            <div class="product-card" style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); border-left: 4px solid var(--primary-color);">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+                <h3 style="text-align: center; font-size: 1.3rem; margin-bottom: 1rem; color: var(--dark-color);">ステンレス・高合金鋼</h3>
+                <p style="line-height: 1.7; margin-bottom: 1rem;">優れた耐食性と機械的特性を持つステンレス鋼。食品、化学、エネルギー産業に最適な素材です。</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> オーステナイト系ステンレス</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> マルテンサイト系ステンレス</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 高合金耐熱鋼</li>
+                </ul>
+            </div>
+
+            <div class="product-card" style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); border-left: 4px solid var(--primary-color);">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <i class="fas fa-tools" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+                <h3 style="text-align: center; font-size: 1.3rem; margin-bottom: 1rem; color: var(--dark-color);">工業用バー・シート・ワイヤー</h3>
+                <p style="line-height: 1.7; margin-bottom: 1rem;">多様な形状と規格で提供される工業用素材。精密加工から大型構造物まで幅広く対応します。</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 丸棒・角棒・六角棒</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> シート・プレート</li>
+                    <li style="padding: 0.3rem 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 0.5rem;"></i> ワイヤー・パイプ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-with-bg" style="background-image: url('https://www.cemecon.com/storage/images/facts-stories/59/titanium_high-tech_material_with_enormous_potential_02.jpg'); background-size: cover; background-position: center; padding: 5rem 2rem;">
+    <div class="container">
+        <h2 class="section-title" style="color: var(--dark-color);">研究開発・品質保証</h2>
+        <div class="content-with-image reverse">
+            <div style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-lg);">
+                <h3 style="font-size: 1.4rem; color: var(--primary-color); margin-bottom: 1rem;">
+                    <i class="fas fa-flask"></i> 国家級実験室・独自技術
+                </h3>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    攀鋼特殊鋼は、国家認定の研究開発センターを擁し、特殊鋼・チタン素材の基礎研究から応用開発まで一貫した技術開発体制を確立しています。
+                </p>
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 6px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--dark-color);">
+                        <i class="fas fa-certificate"></i> 国際標準認証
+                    </h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-award" style="color: var(--primary-color); margin-right: 0.5rem;"></i> ISO 9001 品質マネジメントシステム</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-award" style="color: var(--primary-color); margin-right: 0.5rem;"></i> ISO 14001 環境マネジメントシステム</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-award" style="color: var(--primary-color); margin-right: 0.5rem;"></i> OHSAS 18001 労働安全衛生マネジメント</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-award" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 航空宇宙品質認証（AS9100）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-image">
+                <img src="https://labtesting.com/wp-content/uploads/service-hero__metallurgical-testing.jpg" alt="品質検査・研究開発" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" style="background: var(--white);">
+    <div class="container">
+        <h2 class="section-title">製造拠点・供給体制</h2>
+        <div style="max-width: 900px; margin: 0 auto 3rem;">
+            <p style="text-align: center; font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+                攀鋼特殊鋼は、中国西南部に戦略的に配置された主要生産拠点を通じて、鉱山から製造・輸送まで一貫したプロセスを確立しています。
+            </p>
         </div>
 
-        <div class="content-block">
-            <h2>製品ラインナップ</h2>
-            <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                <div class="info-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>工具鋼</h3>
-                    <p>高硬度と耐摩耗性を持ち、切削工具や金型製作に最適です。</p>
+        <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
+                <i class="fas fa-industry" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">攀枝花拠点</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">特殊鋼・チタン製品の主要生産拠点。一貫製造体制を実現</p>
+            </div>
+            <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
+                <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">成都拠点</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">研究開発センター・技術サポート拠点</p>
+            </div>
+            <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
+                <i class="fas fa-mountain" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">西昌拠点</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">鉱山採掘・原料供給拠点</p>
+            </div>
+        </div>
+
+        <div class="integrated-system" style="background: linear-gradient(135deg, rgba(245, 245, 245, 0.8), rgba(196, 30, 58, 0.05)); padding: 3rem; border-radius: 8px; border-left: 6px solid var(--primary-color);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--dark-color);">
+                <i class="fas fa-recycle"></i> 一貫プロセス - 鉱山から製品まで
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div style="text-align: center;">
+                    <div style="background: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: var(--shadow);">
+                        <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">1</span>
+                    </div>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">鉱山採掘</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">自社鉱山からの原料調達</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-building"></i>
-                    <h3>構造用鋼</h3>
-                    <p>高強度と優れた靭性を兼ね備え、構造物や機械部品に使用されます。</p>
+                <div style="text-align: center;">
+                    <div style="background: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: var(--shadow);">
+                        <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">2</span>
+                    </div>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">溶解・精錬</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">高純度化プロセス</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-circle-notch"></i>
-                    <h3>軸受鋼</h3>
-                    <p>高い疲労強度と耐摩耗性を持ち、ベアリング製造に欠かせません。</p>
+                <div style="text-align: center;">
+                    <div style="background: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: var(--shadow);">
+                        <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">3</span>
+                    </div>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">圧延・加工</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">多様な形状への成形</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-fire"></i>
-                    <h3>耐熱・耐食鋼</h3>
-                    <p>高温環境や腐食性環境下でも優れた性能を発揮します。</p>
+                <div style="text-align: center;">
+                    <div style="background: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: var(--shadow);">
+                        <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">4</span>
+                    </div>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">品質検査</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">厳格な品質管理</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>ステンレス鋼</h3>
-                    <p>耐食性と美観を兼ね備え、幅広い用途に対応します。</p>
+                <div style="text-align: center;">
+                    <div style="background: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: var(--shadow);">
+                        <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">5</span>
+                    </div>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">グローバル輸送</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">世界各地への供給</p>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; text-align: center; font-size: 1.05rem; font-weight: 600; color: var(--primary-color);">
+                <i class="fas fa-leaf"></i> 安定供給 × 持続可能な製造
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" style="background: var(--light-gray);">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="section-title">攀鋼特殊鋼の強み</h2>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 3rem;">
+                最先端技術と持続可能な製造プロセスで、世界中のお客様に高品質な特殊鋼・チタン製品を提供します。
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem;">
+                <div>
+                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">一貫製造体制</h3>
+                    <p style="font-size: 0.95rem; color: var(--mid-gray);">鉱山から製品まで</p>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">研究開発力</h3>
+                    <p style="font-size: 0.95rem; color: var(--mid-gray);">国家級実験室保有</p>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">国際認証</h3>
+                    <p style="font-size: 0.95rem; color: var(--mid-gray);">ISO/AS9100準拠</p>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">グローバル供給</h3>
+                    <p style="font-size: 0.95rem; color: var(--mid-gray);">世界中へ安定供給</p>
                 </div>
             </div>
         </div>
 
-        <div class="content-block">
-            <h2>主な特長</h2>
-            <ul style="list-style: none;">
-                <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light-color); border-radius: 6px;">
-                    <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.75rem;"></i>
-                    <strong>高純度・高均質性:</strong> 厳格な品質管理により、不純物を極限まで低減
-                </li>
-                <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light-color); border-radius: 6px;">
-                    <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.75rem;"></i>
-                    <strong>精密加工対応:</strong> 複雑な形状への加工にも対応可能
-                </li>
-                <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light-color); border-radius: 6px;">
-                    <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.75rem;"></i>
-                    <strong>多様な用途:</strong> 自動車、エネルギー、装置産業など幅広い分野に対応
-                </li>
-                <li style="padding: 0.75rem; margin-bottom: 0.5rem; background: var(--light-color); border-radius: 6px;">
-                    <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.75rem;"></i>
-                    <strong>安定供給:</strong> 世界最高水準の品質と安定供給体制
-                </li>
-            </ul>
-        </div>
-
-        <div class="content-block">
-            <h2>適用分野</h2>
-            <div class="name-origin">
-                <div class="origin-item">
-                    <h3><i class="fas fa-car"></i> 自動車産業</h3>
-                    <p>エンジン部品、トランスミッション、シャフト類など、高負荷環境下で使用される部品に最適です。</p>
-                </div>
-                <div class="origin-item">
-                    <h3><i class="fas fa-bolt"></i> エネルギー産業</h3>
-                    <p>タービン、バルブ、高圧配管など、耐熱性・耐食性が求められる部品に使用されます。</p>
-                </div>
-                <div class="origin-item">
-                    <h3><i class="fas fa-cogs"></i> 装置産業</h3>
-                    <p>工作機械、プレス機、射出成形機など、精密機械の主要部品に採用されています。</p>
-                </div>
-                <div class="origin-item">
-                    <h3><i class="fas fa-plane"></i> 航空宇宙</h3>
-                    <p>高強度・軽量が求められる航空機部品や宇宙機器の材料として使用されます。</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="commitment-box">
-            <h3><i class="fas fa-leaf"></i> 持続可能性への取り組み</h3>
-            <p>攀鋼長城の特殊鋼製品は、製造工程の省エネルギー化と材料効率の最適化により、環境負荷低減と高機能性を両立しています。グリーン鉱山ビジョンのもと、持続可能な製造プロセスを追求しています。</p>
-        </div>
     </div>
 </section>
 `;
