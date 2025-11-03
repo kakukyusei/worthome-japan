@@ -7,7 +7,7 @@ export const partnershipContent = `
         <h2 class="section-title">株式会社萬橡和のパートナーシップ</h2>
         
         <div style="text-align: center; margin: 3rem 0;">
-            <img src="https://page.gensparksite.com/v1/base64_upload/ee0d594d5fe8fe9ad4eaa84650d80e96" alt="パートナーシップ体制図" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+            <img src="https://page.gensparksite.com/v1/base64_upload/9223223bcad5d8cc0580f149cc6fdb76" alt="パートナーシップ体制図" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
         </div>
 
         <div class="visual-section" style="background-image: url('https://www.6sigma.us/wp-content/uploads/2024/09/quality-inspection.webp'); background-size: cover; background-position: center;">
@@ -39,11 +39,7 @@ export const partnershipContent = `
                     <h3>中国遠洋海運集団(COSCO)</h3>
                     <p>華北地域本部。海上輸送・通関・国内配送を担当。</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-warehouse"></i>
-                    <h3>指定受取倉庫等</h3>
-                    <p></p>
-                </div>
+
             </div>
         </div>
         </div>
