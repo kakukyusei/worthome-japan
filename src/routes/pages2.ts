@@ -51,123 +51,67 @@ export const partnershipContent = `
 export const businessModelContent = `
 <section class="content-section">
     <div class="container">
-        <h2 class="section-title">お客様に安心をお届けする取引フロー</h2>
+        <h2 class="section-title">取引モデル</h2>
         
-        <div class="content-with-image">
-            <div class="content-block">
-                <p class="lead">お見積・ご請求は円建て / 関税込・持込渡し(関税立替) / 指定場所へ配送</p>
-                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                    <strong>役割分担:</strong> 品質=鞍鋼集団 / 輸送・通関=COSCO / 窓口=萬橡和
-                </p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 円建て取引で為替リスク軽減</li>
-                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 関税立替で煩雑な手続き不要</li>
-                    <li style="margin-bottom: 0.8rem;"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> 指定場所へ直接配送</li>
-                </ul>
-            </div>
-            <div class="content-image">
-                <img src="https://scm.ncsu.edu/wp-content/uploads/sites/29/2021/10/LA-Port-16x9-1.jpg" alt="グローバル物流" loading="lazy">
-            </div>
-        </div>
-
-        <div class="process-steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>見積・条件合意</h3>
-                    <p>お客様のご要望をヒアリングし、最適な製品仕様と条件をご提案します。</p>
-                    <div class="role-tags">
-                        <span class="role-tag worthome">萬橡和: 窓口対応</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>発注・前払い</h3>
-                    <p>正式なご発注をいただき、円建てで前払金をお支払いいただきます。</p>
-                    <div class="role-tags">
-                        <span class="role-tag worthome">萬橡和: 契約・請求</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>生産手配</h3>
-                    <p>鞍鋼集団が製品仕様を確認し、生産計画を立案・実行します。</p>
-                    <div class="role-tags">
-                        <span class="role-tag anko">鞍鋼集団: 生産管理</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>大連港搬入</h3>
-                    <p>完成した製品を大連港に搬入し、船積み準備を行います。</p>
-                    <div class="role-tags">
-                        <span class="role-tag anko">鞍鋼集団: 輸送手配</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3>海上輸送</h3>
-                    <p>COSCOが大連港から日本の港まで海上輸送を行います。</p>
-                    <div class="role-tags">
-                        <span class="role-tag cosco">COSCO: 海上輸送</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">6</div>
-                <div class="step-content">
-                    <h3>日本到着・通関</h3>
-                    <p>日本の港に到着後、通関手続きと関税手配を行います。</p>
-                    <div class="role-tags">
-                        <span class="role-tag cosco">COSCO: 通関・関税</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">7</div>
-                <div class="step-content">
-                    <h3>国内配送・検収</h3>
-                    <p>お客様指定の場所まで国内配送し、検収を行います。</p>
-                    <div class="role-tags">
-                        <span class="role-tag cosco">COSCO: 国内配送</span>
-                        <span class="role-tag worthome">萬橡和: 納品確認</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-number">8</div>
-                <div class="step-content">
-                    <h3>請求・支払い</h3>
-                    <p>納品完了後、残金のご請求とお支払いをいただきます。</p>
-                    <div class="role-tags">
-                        <span class="role-tag worthome">萬橡和: 請求・決済</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="commitment-box">
+        <div class="commitment-box" style="margin-bottom: 3rem;">
             <h3><i class="fas fa-shield-alt"></i> 萬橡和の3つの役割</h3>
             <ul class="commitment-list">
                 <li><i class="fas fa-check-circle"></i> <strong>窓口機能:</strong> お客様との一元的なコミュニケーション窓口として、要件定義から納品まで一貫してサポート</li>
                 <li><i class="fas fa-check-circle"></i> <strong>調整機能:</strong> 鞍鋼集団とCOSCOとの連携を円滑に進め、スムーズな取引を実現</li>
                 <li><i class="fas fa-check-circle"></i> <strong>リスク管理:</strong> 円建て取引により為替リスクを軽減し、お客様の資金繰りをサポート</li>
             </ul>
+        </div>
+
+        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.3rem;">取引フロー</h3>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">①</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">見積・条件合意</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 窓口対応</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">②</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">発注・前払い</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 契約・請求</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.5rem;">③</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">生産手配</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">鞍鋼集団: 生産管理</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.5rem;">④</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">大連港搬入</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">鞍鋼集団: 輸送手配</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑤</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">海上輸送</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO: 海上輸送</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑥</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">日本到着・通関</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO: 通関・関税</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑦</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">国内配送・検収</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO / 萬橡和</p>
+            </div>
+
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">⑧</div>
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">請求・支払い</h4>
+                <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 請求・決済</p>
+            </div>
         </div>
     </div>
 </section>
