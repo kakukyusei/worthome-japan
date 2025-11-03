@@ -6,31 +6,8 @@ export const partnershipContent = `
     <div class="container">
         <h2 class="section-title">株式会社萬橡和のパートナーシップ</h2>
         
-        <div class="partnership-diagram">
-            <div class="partnership-flow">
-                <div class="partner-box">
-                    <h3><i class="fas fa-industry"></i> 鞍鋼集団国際経済貿易</h3>
-                    <p>(鞍鋼集団の海外業務を統括する完全子会社)</p>
-                </div>
-                
-                <div class="flow-arrow">
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                
-                <div class="partner-box main">
-                    <h3><i class="fas fa-building"></i> 株式会社萬橡和</h3>
-                    <p>指定代理商・窓口</p>
-                </div>
-                
-                <div class="flow-arrow">
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                
-                <div class="partner-box">
-                    <h3><i class="fas fa-users"></i> お客様</h3>
-                    <p>円建て取引</p>
-                </div>
-            </div>
+        <div style="text-align: center; margin: 3rem 0;">
+            <img src="https://page.gensparksite.com/v1/base64_upload/ee0d594d5fe8fe9ad4eaa84650d80e96" alt="パートナーシップ体制図" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
         </div>
 
         <div class="visual-section" style="background-image: url('https://www.6sigma.us/wp-content/uploads/2024/09/quality-inspection.webp'); background-size: cover; background-position: center;">
@@ -65,21 +42,10 @@ export const partnershipContent = `
                 <div class="info-item">
                     <i class="fas fa-warehouse"></i>
                     <h3>指定受取倉庫等</h3>
-                    <p>日本国内の物流パートナーネットワーク。</p>
+                    <p></p>
                 </div>
             </div>
         </div>
-        </div>
-
-        <div class="integrated-system">
-            <h3><i class="fas fa-network-wired"></i> 連携体制</h3>
-            <p>鞍鋼集団の生産力、COSCOの物流網、そして萬橡和の窓口機能を組み合わせることで、お客様に安心・安全・確実な鉄鋼製品供給を実現します。</p>
-            <ul style="margin-top: 1rem; list-style: none;">
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 品質保証: 鞍鋼集団の厳格な品質管理</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 確実な輸送: COSCO の信頼できる物流サービス</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 円建て取引: 萬橡和による為替リスクの軽減</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> ワンストップサービス: 見積から納品まで一貫サポート</li>
-            </ul>
         </div>
     </div>
 </section>
