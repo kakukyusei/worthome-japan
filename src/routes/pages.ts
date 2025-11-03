@@ -51,17 +51,6 @@ export const homeContent = `
 
 // 会社概要ページ
 export const aboutContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>株式会社萬橡和について</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>会社情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>株式会社萬橡和について</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="about-content">
@@ -154,17 +143,6 @@ export const aboutContent = `
 
 // 企業理念ページ
 export const philosophyContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>企業理念</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>会社情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>企業理念</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="philosophy-intro">
@@ -227,17 +205,6 @@ export const philosophyContent = `
 
 // 代表者挨拶ページ
 export const messageContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>代表者挨拶</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>会社情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>代表者挨拶</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="message-content">

@@ -2,17 +2,6 @@
 
 // パートナーシップページ
 export const partnershipContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>パートナーシップ</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>事業内容</span> <i class="fas fa-chevron-right"></i> 
-            <span>パートナーシップ</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <h2 class="section-title">株式会社萬橡和のパートナーシップ</h2>
@@ -98,17 +87,6 @@ export const partnershipContent = `
 
 // 取引モデルページ
 export const businessModelContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>取引モデル</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>事業内容</span> <i class="fas fa-chevron-right"></i> 
-            <span>取引モデル</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <h2 class="section-title">お客様に安心をお届けする取引フロー</h2>
@@ -235,17 +213,6 @@ export const businessModelContent = `
 
 // 製品一覧ページ
 export const productsContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>取り扱う製品</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>取り扱う製品</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <h2 class="section-title">高品質な鉄鋼製品を幅広くご提供</h2>
@@ -338,16 +305,6 @@ export const productsContent = `
 
 // 联系页面
 export const contactContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>お問い合わせ</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>お問い合わせ</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="content-block">

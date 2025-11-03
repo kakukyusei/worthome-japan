@@ -2,17 +2,6 @@
 
 // 本鋼普通鋼详情
 export const bengangSteelContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>本鋼普通鋼</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>本鋼普通鋼</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="product-detail-header">
@@ -101,17 +90,6 @@ export const bengangSteelContent = `
 
 // 本鋼特殊鋼详情
 export const bengangSpecialContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>本鋼特殊鋼</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>本鋼特殊鋼</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="product-detail-header">
@@ -224,19 +202,6 @@ export const bengangSpecialContent = `
 
 // 攀鋼特殊鋼详情
 export const pangangSpecialContent = `
-<section class="page-header" style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(196, 30, 58, 0.85)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ThyssenKrupp_Duisburg_016.jpg/1200px-ThyssenKrupp_Duisburg_016.jpg'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
-    <div class="container" style="text-align: center;">
-        <h1 style="font-size: 3rem; margin-bottom: 1rem;">攀鋼特殊鋼（Pangang Special Steel）</h1>
-        <p style="font-size: 1.4rem; margin-bottom: 1rem; opacity: 0.95;">高機能特殊鋼とチタン素材のリーディングメーカー</p>
-        <p style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.1em; opacity: 0.9;">品質 × 技術 × 革新で未来の産業を支える</p>
-        <p class="breadcrumb" style="margin-top: 2rem; opacity: 0.9;">
-            <a href="/" style="color: var(--white);">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>攀鋼特殊鋼</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section" style="background: var(--white);">
     <div class="container">
         <h2 class="section-title">会社概要</h2>
@@ -468,17 +433,6 @@ export const pangangSpecialContent = `
 
 // 攀鋼チタン详情
 export const pangangTitaniumContent = `
-<section class="page-header">
-    <div class="container">
-        <h1>攀鋼チタン・チタン合金</h1>
-        <p class="breadcrumb">
-            <a href="/">ホーム</a> <i class="fas fa-chevron-right"></i> 
-            <span>製品情報</span> <i class="fas fa-chevron-right"></i> 
-            <span>攀鋼チタン・チタン合金</span>
-        </p>
-    </div>
-</section>
-
 <section class="content-section">
     <div class="container">
         <div class="product-detail-header">
