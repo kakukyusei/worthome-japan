@@ -4,8 +4,40 @@
 export const homeContent = `
 <section class="hero">
     <div class="hero-content">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <img src="https://page.gensparksite.com/v1/base64_upload/51d2822dc59867e0579307cdcb46ad5f" alt="鞍鋼集団製鉄所パノラマ" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);">
+        <div class="slideshow-container">
+            <button class="slide-nav prev" aria-label="前へ">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slideshow-wrapper">
+                <div class="slide">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/51d2822dc59867e0579307cdcb46ad5f" alt="鞍鋼集団製鉄所パノラマ" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/a8783712cb6d1221a0b9f6186890a233" alt="鉱山開発現場" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/669609b4b442fc0e50ad58ac7b5759c5" alt="最新製鉄設備" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/bc9e0b53417ce7297ee70ec275b3133d" alt="露天掘り鉱山作業" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/b2eabd1c57c1ee3282e15393c59228d8" alt="鉄鋼生産施設全景" loading="lazy">
+                </div>
+            </div>
+            
+            <button class="slide-nav next" aria-label="次へ">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="slideshow-dots">
+                <span class="dot" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+            </div>
         </div>
     </div>
 </section>
