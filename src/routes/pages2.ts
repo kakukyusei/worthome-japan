@@ -10,9 +10,9 @@ export const partnershipContent = `
             <img src="https://page.gensparksite.com/v1/base64_upload/9223223bcad5d8cc0580f149cc6fdb76" alt="パートナーシップ体制図" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
         </div>
 
-        <div class="visual-section" style="background-image: url('https://www.6sigma.us/wp-content/uploads/2024/09/quality-inspection.webp'); background-size: cover; background-position: center;">
-            <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 8px;">
-                <h2>主要パートナー</h2>
+        <div style="margin: 3rem 0;">
+            <div style="padding: 2rem;">
+                <h2 class="section-title">主要パートナー</h2>
                 <div class="partners-grid">
                 <div class="info-item">
                     <i class="fas fa-industry"></i>
