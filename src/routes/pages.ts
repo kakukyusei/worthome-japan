@@ -187,11 +187,11 @@ export const messageContent = `
         <h2 class="section-title">代表者挨拶</h2>
         
         <div class="content-with-image">
-            <div style="flex: 0 0 35%; max-width: 35%;">
-                <img src="https://page.gensparksite.com/v1/base64_upload/0fc752b9312d169fb60e60a95bc35664" alt="代表取締役社長 丁友" style="width: 100%; border-radius: 4px; margin-bottom: 1.5rem;" loading="lazy">
-                <p style="font-size: 0.95rem; line-height: 1.8; color: #555;">1978年、中国遼寧省本渓市に生まれる。両親が本渓鋼鉄に勤めていた影響もあり、幼い頃から鋼鉄は身近な存在だった。大学卒業後、すぐに鉄鋼貿易の道に進み、鋼鉄と共に生きていくことを決意した。</p>
+            <div style="flex: 0 0 30%; max-width: 30%;">
+                <img src="https://page.gensparksite.com/v1/base64_upload/0fc752b9312d169fb60e60a95bc35664" alt="代表取締役社長 丁友" style="width: 100%; border-radius: 4px; margin-bottom: 1rem;" loading="lazy">
+                <p style="font-size: 0.85rem; line-height: 1.7; color: #666;">1978年、中国遼寧省本渓市に生まれる。両親が本渓鋼鉄に勤めていた影響もあり、幼い頃から鋼鉄は身近な存在だった。大学卒業後、すぐに鉄鋼貿易の道に進み、鋼鉄と共に生きていくことを決意した。</p>
             </div>
-            <div style="flex: 0 0 60%; max-width: 60%;">
+            <div style="flex: 0 0 65%; max-width: 65%;">
                 <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">鉄鋼業界に身を置いて二十余年。この道で学んだ真髄は、優れた製品に「心」が込められてこそ、初めてその真価をお客様にお届けできるということです。</p>
                 
                 <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">私は中国遼寧省本渓市に生まれ、幼い頃から本渓鋼鉄のそばで育ちました。鋼鉄は、私のルーツそのものです。萬橡和を設立した思いはシンプルであり、この地で培われた確かな品質の鋼材を、誠実なサービスに載せて、必要としておられるお客様のもとへ届けたい。ただそれだけでした。</p>
