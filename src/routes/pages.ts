@@ -4,19 +4,8 @@
 export const homeContent = `
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-features">
-            <div class="feature-item">
-                <i class="fas fa-handshake"></i>
-                <h3>信頼のパートナーシップ</h3>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-leaf"></i>
-                <h3>グリーン鉱山ビジョン</h3>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>強靭なサプライチェーン</h3>
-            </div>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <img src="https://page.gensparksite.com/v1/base64_upload/51d2822dc59867e0579307cdcb46ad5f" alt="鞍鋼集団製鉄所パノラマ" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);">
         </div>
     </div>
 </section>
