@@ -90,10 +90,6 @@ export const aboutContent = `
                         <th><i class="fas fa-map-marker-alt"></i> 打合せ拠点</th>
                         <td>大阪市西区阿波座2-1-1 CAMCO西本町ビル10F(鞍鋼ジャパン内)</td>
                     </tr>
-                    <tr>
-                        <th><i class="fas fa-link"></i> Web</th>
-                        <td><a href="https://worthome.co.jp" target="_blank">worthome.co.jp</a></td>
-                    </tr>
                 </table>
             </div>
     </div>
