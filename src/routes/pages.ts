@@ -145,58 +145,32 @@ export const aboutContent = `
 export const philosophyContent = `
 <section class="content-section">
     <div class="container">
-        <div class="philosophy-intro">
-            <h2>株式会社萬橡和の理念(3つの柱)</h2>
-            <p class="lead">私たちは、3つの柱を軸に、持続可能な社会の実現と、関わるすべての人々の幸せを追求します。</p>
-        </div>
-
-        <div class="pillars">
-            <div class="pillar">
-                <div class="pillar-number">1</div>
-                <div class="pillar-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h3>人と地域の「幸せ」を育み、信頼の輪を広げる</h3>
-                <div class="pillar-content">
-                    <p>「Worthome」は「価値」と「家」から成る言葉です。家族を大切にする経営者とスタッフが集う私たちは、社員はもちろん、共に歩むパートナーやお客様とも家族のように誠実に向き合い、関わる全ての人と地域社会の「幸せ」を育みます。</p>
-                    <p class="pillar-highlight">萬橡和の「和」が、より大きな信頼の「輪」へと広がるよう努力を重ねてまいります。</p>
-                </div>
+        <h2 class="section-title">企業理念</h2>
+        
+        <div class="content-with-image">
+            <div>
+                <p style="font-size: 1.05rem; line-height: 1.9;">人と地域の「幸せ」を育み、信頼で結ばれた輪を広げます。「Worthome」は、「価値」と「家」という想いで構成されています。家族を大切にする経営者とスタッフが集う私たちは、社員はもちろん、共に歩むパートナーやお客様とも家族のように誠実に向き合い、かけがえのない存在としてお付き合いを続けてまいりました。企業として価値を創出することも重要ですが、それ以上に、関わる一人ひとりの人間と、私たちが根ざす地域社会の「幸せ」を育むことを重視しています。萬橡和の「和」が、より大きな信頼の「輪」へと広がるよう、これからも努力を重ねてまいります。</p>
             </div>
-
-            <div class="pillar">
-                <div class="pillar-number">2</div>
-                <div class="pillar-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3>脱炭素への貢献(グリーン鉱山ビジョン)</h3>
-                <div class="pillar-content">
-                    <p>鉄鋼製品は製造から原料採掘まで多くの炭素を排出する産業です。鞍鋼集団と共に「グリーン鉱山ビジョン」を策定し、鉱山への再生可能エネルギー導入を促進。</p>
-                    <p class="pillar-highlight">また、EUと中国のカーボンクレジット基準間の対話プラットフォーム構築に貢献し、将来の世界統一基準確立を目指します。</p>
-                </div>
-            </div>
-
-            <div class="pillar">
-                <div class="pillar-number">3</div>
-                <div class="pillar-icon">
-                    <i class="fas fa-link"></i>
-                </div>
-                <h3>サプライチェーン強靭化の新たな選択肢</h3>
-                <div class="pillar-content">
-                    <p>鉄鋼は「産業の血液」です。鞍山鋼鉄集団製品の新たな窓口として、お客様の資金繰りに優しい取引体制を構築し、「強くしなやかな、もう一つの選択肢」を目指します。</p>
-                    <p class="pillar-highlight">少量取引でも、お客様のBCP(事業継続計画)の一翼を担えるよう努めてまいります。</p>
-                </div>
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800" alt="信頼で結ばれたチームワーク" loading="lazy">
             </div>
         </div>
 
-        <div class="philosophy-footer">
-            <div class="commitment-box">
-                <h3><i class="fas fa-handshake"></i> 私たちの約束</h3>
-                <ul class="commitment-list">
-                    <li><i class="fas fa-check-circle"></i> 家族のような温かさと誠実さで、すべてのステークホルダーと向き合います</li>
-                    <li><i class="fas fa-check-circle"></i> 環境への配慮を最優先し、持続可能な事業活動を推進します</li>
-                    <li><i class="fas fa-check-circle"></i> お客様の事業継続をサポートする、柔軟で強靭なサプライチェーンを提供します</li>
-                    <li><i class="fas fa-check-circle"></i> 信頼と品質を基盤に、アジアの発展に貢献します</li>
-                </ul>
+        <div class="content-with-image reverse" style="margin-top: 3rem;">
+            <div>
+                <p style="font-size: 1.05rem; line-height: 1.9;">鉄鋼業の一員として、脱炭素という地球規模の課題に貢献します。鉄鋼製品は、製造工程のみならず、鉱石の採掘段階から大量の炭素を排出する産業です。世界有数の鉄鋼生産国である中国には、脱炭素において大きな責任と役割があると私たちは認識しています。その責任を果たすため、私たちは鞍鋼集団と共に「グリーン鉱山ビジョン」を策定し、鉱山への太陽光・風力発電の導入を促進するプロジェクトを推進しております。また、独自のネットワークを活かし、EU-ETSと中国のカーボンクレジット基準間の対話プラットフォーム構築にも積極的に取り組んでいます。将来、世界で統一されるカーボンクレジット基準の確立に、微力ながら貢献してまいりたいと考えています。</p>
+            </div>
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800" alt="太陽光発電と風力発電" loading="lazy">
+            </div>
+        </div>
+
+        <div class="content-with-image" style="margin-top: 3rem;">
+            <div>
+                <p style="font-size: 1.05rem; line-height: 1.9;">新たな選択肢として、お客様のサプライチェーン強靭化に貢献します。鉄鋼はものづくりを支える「産業の血液」です。その原料である鉄鉱石の供給を100%輸入に依存する日本の構造は、ある種の脆弱性を抱えていると言えます。鞍山鋼鉄集团の製品を取り扱う新たな窓口として、また、お客様の資金繰りに優しい取引体制を構築することで、お客様のサプライチェーンにおける「強くしなやかな、もう一つの選択肢」となることを目指しています。少量の取引であっても、お客様にとって長期的なBCP(事業継続計画)の一翼を担えるよう、努めてまいります。</p>
+            </div>
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" alt="強靭なサプライチェーン" loading="lazy">
             </div>
         </div>
     </div>
