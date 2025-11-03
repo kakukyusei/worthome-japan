@@ -105,9 +105,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (slideshowWrapper && slides.length > 0) {
         let currentSlide = 0;
-        let autoPlayInterval;
+        let autoPlayInterval = null;
+        let isTransitioning = false;
 
-        function showSlide(index) {
+        function showSlide(index, skipTransition = false) {
+            if (isTransitioning && !skipTransition) return;
+            
             if (index >= slides.length) {
                 currentSlide = 0;
             } else if (index < 0) {
@@ -116,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentSlide = index;
             }
 
+            isTransitioning = true;
             const offset = -currentSlide * 100;
             slideshowWrapper.style.transform = `translateX(${offset}%)`;
 
@@ -123,6 +127,11 @@ document.addEventListener('DOMContentLoaded', function() {
             dots.forEach((dot, i) => {
                 dot.classList.toggle('active', i === currentSlide);
             });
+
+            // トランジション完了後にフラグをリセット
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 600);
         }
 
         function nextSlide() {
@@ -134,27 +143,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         function startAutoPlay() {
-            autoPlayInterval = setInterval(nextSlide, 5000); // 5秒ごとに自動切替
+            // 既存のインターバルをクリア
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = null;
+            }
+            // 新しいインターバルを設定（正確に5000ms）
+            autoPlayInterval = setInterval(() => {
+                nextSlide();
+            }, 5000);
         }
 
         function stopAutoPlay() {
-            clearInterval(autoPlayInterval);
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = null;
+            }
+        }
+
+        function resetAutoPlay() {
+            stopAutoPlay();
+            startAutoPlay();
         }
 
         // ナビゲーションボタン
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 nextSlide();
-                stopAutoPlay();
-                startAutoPlay(); // 自動再生を再開
+                resetAutoPlay();
             });
         }
 
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
                 prevSlide();
-                stopAutoPlay();
-                startAutoPlay(); // 自動再生を再開
+                resetAutoPlay();
             });
         }
 
@@ -162,20 +185,28 @@ document.addEventListener('DOMContentLoaded', function() {
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 showSlide(index);
-                stopAutoPlay();
-                startAutoPlay(); // 自動再生を再開
+                resetAutoPlay();
             });
         });
 
         // 初期化
-        showSlide(0);
+        showSlide(0, true);
         startAutoPlay();
 
-        // マウスホバーで一時停止
+        // マウスホバーで一時停止（オプション）
         const container = document.querySelector('.slideshow-container');
         if (container) {
             container.addEventListener('mouseenter', stopAutoPlay);
             container.addEventListener('mouseleave', startAutoPlay);
         }
+
+        // ページの可視性変更時の処理
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoPlay();
+            } else {
+                startAutoPlay();
+            }
+        });
     }
 });
