@@ -6,25 +6,27 @@
 }
 
 :root {
-    /* ステンレススタイルの配色 - シルバー・スチールブルー・クールグレー */
-    --primary-color: #5a6e7f;      /* スチールブルー - ステンレスの青み */
-    --secondary-color: #3d4f5d;    /* ダークスチールブルー */
-    --accent-color: #7a8c9e;       /* ライトスチールブルー */
-    --dark-color: #2c3e50;         /* ダークグレーブルー */
-    --mid-gray: #666666;
-    --light-gray: #e8ecef;         /* クールグレー */
+    /* ステンレススタイルの配色 - 光沢感のあるシルバー・グレー・ホワイト */
+    --primary-color: #8b9299;      /* ステンレスグレー */
+    --secondary-color: #6c757d;    /* ダークステンレスグレー */
+    --accent-color: #adb5bd;       /* ライトステンレスグレー */
+    --dark-color: #495057;         /* チャコールグレー */
+    --mid-gray: #6c757d;
+    --light-gray: #e9ecef;         /* シルバーホワイト */
     --white: #ffffff;
-    --text-color: #333333;
-    --border-color: #c0c8cf;       /* シルバーグレー */
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.15);
+    --text-color: #343a40;
+    --border-color: #ced4da;       /* ステンレス境界線 */
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --metallic-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --steel-gradient: linear-gradient(to right, #bdc3c7 0%, #ecf0f1 50%, #bdc3c7 100%);
 }
 
 body {
     font-family: 'MS Pゴシック', 'MS PGothic', 'Osaka', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
     font-size: 14px;
 }
 
@@ -39,12 +41,13 @@ body {
 ======================================== */
 
 .navbar {
-    background: var(--white);
-    border-bottom: 2px solid var(--primary-color);
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #adb5bd, #dee2e6, #adb5bd) 1;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-top: 1px solid var(--border-color);
 }
 
@@ -116,7 +119,7 @@ body {
 .nav-menu > li > a.active {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    background-color: rgba(90, 110, 127, 0.05);
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .dropdown-toggle {
@@ -175,11 +178,11 @@ body {
 .hero {
     position: relative;
     min-height: 400px;
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(90, 110, 127, 0.75)),
-                url('https://page.gensparksite.com/v1/base64_upload/1699362d8b5b7e21681d03c3e20989ff');
+    background: linear-gradient(135deg, rgba(233, 236, 239, 0.7), rgba(173, 181, 189, 0.75)),
+                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--dark-color);
     display: flex;
     align-items: center;
     padding: 3rem 2rem;
@@ -192,7 +195,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(248, 249, 250, 0.7));
     z-index: 1;
 }
 
@@ -208,15 +211,17 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
     letter-spacing: 0.05em;
+    color: var(--dark-color);
 }
 
 .hero-subtitle {
     font-size: 1.4rem;
     margin-bottom: 3rem;
     font-weight: 400;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    color: var(--mid-gray);
 }
 
 .hero-features {
@@ -228,18 +233,20 @@ body {
 }
 
 .feature-item {
-    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.85));
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(206, 212, 218, 0.5);
     transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .feature-item:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(248, 249, 250, 0.95));
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-color);
 }
 
 .feature-item i {
@@ -356,7 +363,7 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #adb5bd, #6c757d);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -364,6 +371,7 @@ body {
     color: var(--white);
     font-size: 1.2rem;
     margin-right: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -456,11 +464,11 @@ body {
 ======================================== */
 
 .page-header {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(90, 110, 127, 0.85)),
-                url('https://page.gensparksite.com/v1/base64_upload/b4f09fd85a716f5cb689bf48ff8996d6');
+    background: linear-gradient(135deg, rgba(233, 236, 239, 0.85), rgba(173, 181, 189, 0.8)),
+                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--dark-color);
     padding: 3rem 2rem;
     text-align: center;
     position: relative;
@@ -473,7 +481,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(248, 249, 250, 0.75));
     z-index: 1;
 }
 
@@ -486,7 +494,8 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    color: var(--dark-color);
 }
 
 .breadcrumb {
@@ -495,14 +504,15 @@ body {
 }
 
 .breadcrumb a {
-    color: var(--white);
+    color: var(--mid-gray);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s;
 }
 
 .breadcrumb a:hover {
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--mid-gray);
+    color: var(--primary-color);
 }
 
 .breadcrumb i {
@@ -609,12 +619,13 @@ body {
 }
 
 .integrated-system {
-    background: linear-gradient(135deg, rgba(232, 236, 239, 0.8), rgba(90, 110, 127, 0.05));
+    background: linear-gradient(135deg, rgba(248, 249, 250, 0.95), rgba(233, 236, 239, 0.9));
     padding: 2rem;
     border-radius: 3px;
     margin: 2rem 0;
     border-left: 3px solid var(--primary-color);
     border: 1px solid var(--border-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .integrated-system h3 {
@@ -966,10 +977,11 @@ body {
 }
 
 .product-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #8b9299, #6c757d);
     color: var(--white);
     padding: 2.5rem 2rem;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-header i {
@@ -1212,12 +1224,12 @@ body {
 ======================================== */
 
 .cta-section {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(90, 110, 127, 0.85)),
-                url('https://page.gensparksite.com/v1/base64_upload/d8639dc14aca136bd1c3c4b16e212dd1');
+    background: linear-gradient(135deg, rgba(233, 236, 239, 0.9), rgba(173, 181, 189, 0.85)),
+                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: var(--white);
+    color: var(--dark-color);
     text-align: center;
     padding: 4rem 2rem;
     position: relative;
@@ -1230,7 +1242,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(248, 249, 250, 0.7));
     z-index: 1;
 }
 
@@ -1252,14 +1264,15 @@ body {
 }
 
 .cta-section .btn {
-    background: var(--white);
-    color: var(--primary-color);
-    border-color: var(--white);
+    background: linear-gradient(135deg, #8b9299, #6c757d);
+    color: var(--white);
+    border: 1px solid var(--primary-color);
 }
 
 .cta-section .btn:hover {
-    background: var(--light-gray);
-    border-color: var(--light-gray);
+    background: linear-gradient(135deg, #6c757d, #495057);
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ========================================
@@ -1267,8 +1280,8 @@ body {
 ======================================== */
 
 .footer {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(35, 47, 62, 0.98)),
-                url('https://cdn.pixabay.com/photo/2016/09/02/18/38/factory-1639990_1280.jpg');
+    background: linear-gradient(135deg, rgba(108, 117, 125, 0.95), rgba(73, 80, 87, 0.98)),
+                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1284,7 +1297,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(108, 117, 125, 0.85), rgba(73, 80, 87, 0.9));
     z-index: 1;
 }
 
