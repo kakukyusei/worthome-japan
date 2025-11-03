@@ -184,32 +184,25 @@ export const philosophyContent = `
 export const messageContent = `
 <section class="content-section">
     <div class="container">
-        <div class="message-content">
-            <div class="message-header">
-                <h2>鉄鋼業界に身を置いて二十余年</h2>
+        <h2 class="section-title">代表者挨拶</h2>
+        
+        <div class="content-with-image">
+            <div style="flex: 0 0 35%; max-width: 35%;">
+                <img src="https://page.gensparksite.com/v1/base64_upload/0fc752b9312d169fb60e60a95bc35664" alt="代表取締役社長 丁友" style="width: 100%; border-radius: 4px; margin-bottom: 1.5rem;" loading="lazy">
+                <p style="font-size: 0.95rem; line-height: 1.8; color: #555;">1978年、中国遼寧省本渓市に生まれる。両親が本渓鋼鉄に勤めていた影響もあり、幼い頃から鋼鉄は身近な存在だった。大学卒業後、すぐに鉄鋼貿易の道に進み、鋼鉄と共に生きていくことを決意した。</p>
             </div>
-
-            <p class="message-quote">
-                優れた製品に「心」が込められてこそ、初めてその真価をお客様にお届けできる
-            </p>
-
-            <div class="content-block">
-                <p>私は中国遼寧省本渓市に生まれ、幼い頃から本渓鋼鉄のそばで育ちました。鋼鉄は、私のルーツそのものです。萬橡和を設立した思いはシンプルであり、この地で培われた確かな品質の鋼材を、誠実なサービスに載せて、必要としておられるお客様のもとへ届けたい。ただそれだけでした。</p>
-            </div>
-
-            <div class="content-block">
-                <p>創業以来、鞍鋼集団と緊密に連携し、私たちは単なる商取引ではなく、「自社の責任」として一貫して製品と向き合ってまいりました。お客様が求めているのは契約書という紙ではなく、紛れもない「安心」です。現場で資材到着を待つお客様の立場に立てば、納期と品質の確かさが何よりも重要だと痛感します。</p>
-            </div>
-
-            <div class="content-block">
-                <p>だからこそ、私たちは速さよりも確実さを、言葉よりも実行を重んじます。これまで、お客様からいただいた最高の褒め言葉は「君たちなら信頼できる」の一言。この信頼が、私たちの歩む原動力です。</p>
-            </div>
-
-            <div class="president-profile">
-                <h3>代表取締役社長</h3>
-                <p class="profile-name">丁 友(テイ ユウ)</p>
-                <p>香港萬橡和國際有限公司 / 株式会社萬橡和</p>
-                <p style="margin-top: 1rem;">1978年、中国遼寧省本渓市に生まれる。両親が本渓鋼鉄に勤めていた影響もあり、幼い頃から鋼鉄は身近な存在だった。大学卒業後、すぐに鉄鋼貿易の道に進み、鋼鉄と共に生きていくことを決意した。</p>
+            <div style="flex: 0 0 60%; max-width: 60%;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">鉄鋼業界に身を置いて二十余年。この道で学んだ真髄は、優れた製品に「心」が込められてこそ、初めてその真価をお客様にお届けできるということです。</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">私は中国遼寧省本渓市に生まれ、幼い頃から本渓鋼鉄のそばで育ちました。鋼鉄は、私のルーツそのものです。萬橡和を設立した思いはシンプルであり、この地で培われた確かな品質の鋼材を、誠実なサービスに載せて、必要としておられるお客様のもとへ届けたい。ただそれだけでした。</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">創業以来、鞍鋼集団と緊密に連携し、私たちは単なる商取引ではなく、「自社の責任」として一貫して製品と向き合ってまいりました。お客様が求めているのは契約書という紙ではなく、紛れもない「安心」です。現場で資材到着を待つお客様の立場に立てば、納期と品質の確かさが何よりも重要だと痛感します。</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">だからこそ、私たちは速さよりも確実さを、言葉よりも実行を重んじます。これまで、お客様からいただいた最高の褒め言葉は「君たちなら信頼できる」の一言。この信頼が、私たちの歩む原動力です。</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">これからも、鋼鉄と共に生きると決めた初心を忘れず、中國の優れた鋼材を礎に、お客様のためにひたむきにサービスに励んでまいります。それが、萬橡和の変わらぬ姿勢です。</p>
+                
+                <p style="font-size: 1rem; line-height: 1.8; margin-top: 2rem; text-align: right;">香港萬橡和國際有限公司　/　株式会社萬橡和代表取締役社長　丁友</p>
             </div>
         </div>
     </div>
