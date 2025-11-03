@@ -166,6 +166,24 @@ export const productsContent = `
 
             <div class="product-card">
                 <div class="product-header">
+                    <i class="fas fa-th-large"></i>
+                    <h3>鞍鋼厚板</h3>
+                </div>
+                <div class="product-body">
+                    <h4>大型構造物向け</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 造船用鋼板</li>
+                        <li><i class="fas fa-check"></i> 橋梁用鋼板</li>
+                        <li><i class="fas fa-check"></i> 建築構造用鋼板</li>
+                        <li><i class="fas fa-check"></i> 優れた溶接性</li>
+                        <li><i class="fas fa-check"></i> 高強度・高靭性</li>
+                    </ul>
+                    <a href="/products/ankou-thick-plate" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
                     <i class="fas fa-tools"></i>
                     <h3>攀鋼特殊鋼</h3>
                 </div>

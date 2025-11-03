@@ -16,6 +16,7 @@ import {
 import {
   bengangSteelContent,
   bengangSpecialContent,
+  ankouThickPlateContent,
   pangangSpecialContent,
   pangangTitaniumContent
 } from './routes/products'
@@ -63,6 +64,10 @@ app.get('/products/bengang-steel', (c) => {
 
 app.get('/products/bengang-special', (c) => {
   return c.html(getPageLayout('本鋼特殊鋼', bengangSpecialContent, 'products-bengang-special'))
+})
+
+app.get('/products/ankou-thick-plate', (c) => {
+  return c.html(getPageLayout('鞍鋼厚板', ankouThickPlateContent, 'products-ankou-thick-plate'))
 })
 
 app.get('/products/pangang-special', (c) => {

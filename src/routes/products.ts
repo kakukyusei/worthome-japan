@@ -69,6 +69,18 @@ export const bengangSteelContent = `
                 </div>
             </div>
         </div>
+    </div>
+</section>
+`;
+
+// 鞍鋼厚板详情
+export const ankouThickPlateContent = `
+<section class="content-section">
+    <div class="container">
+        <div class="product-detail-header">
+            <h2>鞍鋼厚板</h2>
+            <p class="lead">様々な厚さと幅に対応した高品質鋼板をご提供します。</p>
+        </div>
 
         <div class="content-block">
             <h2>厚板製品</h2>
@@ -78,11 +90,6 @@ export const bengangSteelContent = `
                 <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 高い強度と靭性</li>
                 <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 多様な厚さ・サイズに対応</li>
             </ul>
-        </div>
-
-        <div class="commitment-box">
-            <h3><i class="fas fa-award"></i> 品質への取り組み</h3>
-            <p>本鋼の普通鋼製品は、日本工業規格(JIS)の厳格な基準をクリアし、認証を取得しています。これにより、お客様に安心してご使用いただける高品質な鋼材をお届けします。</p>
         </div>
     </div>
 </section>
