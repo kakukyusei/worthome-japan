@@ -53,52 +53,22 @@ export const homeContent = `
 export const aboutContent = `
 <section class="content-section">
     <div class="container">
-        <div class="about-content">
-            <div class="content-with-image">
-                <div>
-                    <h2>グループ会社としての歩み</h2>
-                    <p class="lead">株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
-                    
-                    <div class="content-block">
-                        <p>香港萬橡和國際有限公司は2011年から「本鋼集団(ほんこう)」の製品を代理し始め、「本鋼集団」や「鞍鋼(あんこう)集団」等が生産する鉄鋼製品を、インドや韓国など、多くの国々において販売ネットワークを構築してまいりました。</p>
-                        <p class="highlight-box">
-                            <i class="fas fa-info-circle"></i>
-                            <strong>重要な合併:</strong> 2021年に本鋼集団と鞍鋼集団が合併し、生産量が世界3位の新しい鞍鋼集団となりました。
-                        </p>
-                    </div>
-                </div>
-                <div class="content-image">
-                    <img src="https://www.sbwusa.com/wp-content/uploads/2022/01/shipping_ports_supply_chain_bottlenecks.jpg" alt="グローバル物流ネットワーク" loading="lazy">
-                </div>
+        <h2 class="section-title">株式会社萬橡和について</h2>
+        
+        <div class="content-with-image" style="margin-bottom: 3rem;">
+            <div class="content-image" style="flex: 0 0 38%; max-width: 38%;">
+                <img src="https://page.gensparksite.com/v1/base64_upload/b0791ba571ddb73daa410f962a6e76cc" alt="製造施設" style="width: 100%; border-radius: 8px;" loading="lazy">
             </div>
-
-            <div class="content-with-image reverse">
-                <div>
-                    <h2>日本での展開</h2>
-                    <div class="content-block">
-                        <p>日本においてもパートナー企業たちとの連携を一層強化し、生活基盤であるアジアのより良い発展に、鉄鋼業界に携わる一員として、力を合わせて貢献してまいりたいと願っております。</p>
-                    </div>
-                </div>
-                <div class="content-image">
-                    <img src="https://thumbs.dreamstime.com/b/trust-promise-concept-honest-lawyer-partner-professional-team-make-law-business-agreement-complete-deal-ethics-people-186323841.jpg" alt="信頼のパートナーシップ" loading="lazy">
-                </div>
+            <div style="flex: 0 0 58%; max-width: 58%;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">株式会社萬橡和（ばんしょうわ）は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。香港萬橡和國際有限公司は2011年から「本鋼集団（ほんこう）」の製品を代理し始め、「本鋼集団」や「鞍鋼（あんこう）集団」等が生産する鉄鋼製品を、インドや韓国など、多くの国々において販売ネットワーク構築してまいりました。（2021年本鋼集団と鞍鋼集団が合併し、生産量が世界3位の新しい鞍鋼集団となりました。）</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">日本においてもパートナー企業たちとの連携を一層強化し、生活基盤であるアジアのより良い発展に、鉄鋼業界に携わる一員として、力を合わせて貢献してまいりたいと願っております。</p>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9;">「萬橡和」は、「万象（宇宙・天地のすべて）」に木偏を添えて自然への敬意を示し、日本文化の要でもある「和」を重ねることで、自然の摂理と調和して価値を生む企業姿勢を表しています。英語名「WORTHOME」は WORTH と HOME を組み合わせ、同じ理念を英語で表現した造語です。</p>
             </div>
+        </div>
 
-            <h2>社名の由来</h2>
-            <div class="content-block">
-                <div class="name-origin">
-                    <div class="origin-item">
-                        <h3>萬橡和</h3>
-                        <p>「万象(宇宙・天地のすべて)」に木偏を添えて自然への敬意を示し、日本文化の要でもある「和」を重ねることで、自然の摂理と調和して価値を生む企業姿勢を表しています。</p>
-                    </div>
-                    <div class="origin-item">
-                        <h3>WORTHOME</h3>
-                        <p>WORTHとHOMEを組み合わせた造語で、同じ理念を英語で表現しています。「価値ある家」として、関わる全ての人々に温かさと信頼を提供します。</p>
-                    </div>
-                </div>
-            </div>
-
-            <h2>会社概要</h2>
+        <h2>会社概要</h2>
             <div class="company-details">
                 <table class="info-table">
                     <tr>
@@ -131,12 +101,6 @@ export const aboutContent = `
                     </tr>
                 </table>
             </div>
-
-            <div class="integrated-system">
-                <h3><i class="fas fa-industry"></i> 鉱石採掘から製品までの一貫体制</h3>
-                <p>鞍鋼集団は、鉱石の採掘から最終製品まで、一貫した生産体制を持つ世界有数の鉄鋼メーカーです。この強固な基盤が、お客様への安定供給を可能にしています。</p>
-            </div>
-        </div>
     </div>
 </section>
 `;
