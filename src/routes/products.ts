@@ -5,14 +5,55 @@ export const bengangSteelContent = `
 <section class="content-section">
     <div class="container">
         <div class="product-detail-header">
-            <h2>本鋼コイル - JIS認証取得済み高品質鋼材</h2>
-            <p class="lead">本鋼(ほんこう)の製品は、日本工業規格(JIS)の認証を取得しており、高品質な鋼材として日本の製造業に広く活用されています。</p>
+            <h2>本鋼普通鋼 - JIS認証取得済み高品質鋼材</h2>
+            <p class="lead">本鋼集団は年間生産能力2,000万トンを誇る大型総合鉄鋼メーカーです。自動車用鋼を中心に、熱間圧延から冷間圧延、亜鉛めっきまで一貫生産体制を構築し、日本工業規格(JIS)の認証を取得した高品質な鋼材を日本市場へ提供しています。</p>
             <div class="badges">
                 <span class="badge jis">JIS G 3131</span>
                 <span class="badge jis">JIS G 3141</span>
                 <span class="badge jis">JIS G 3302</span>
                 <span class="badge jis">JIS G 3313</span>
                 <span class="badge jis">JIS G 3101</span>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>本鋼集団の概要</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">2,000万トン</div>
+                    <div style="font-size: 0.9rem; color: #666;">年間生産能力</div>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">1,110億元</div>
+                    <div style="font-size: 0.9rem; color: #666;">年間売上高</div>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">8.43万人</div>
+                    <div style="font-size: 0.9rem; color: #666;">従業員数</div>
+                </div>
+            </div>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">実績: 2010–2014年 国内鉄鋼業界 輸出量首位</p>
+        </div>
+
+        <div class="content-block">
+            <h2>主要生産設備</h2>
+            <div class="name-origin">
+                <div class="origin-item">
+                    <h3><i class="fas fa-industry"></i> 2300mm 熱間圧延ライン</h3>
+                    <p>2008年稼働。世界最大幅級の最新鋭設備で、広幅製品の生産に対応します。</p>
+                </div>
+                <div class="origin-item">
+                    <h3><i class="fas fa-industry"></i> 1700mm 熱間圧延ライン</h3>
+                    <p>1980年稼働。国産初の広幅圧延機として長年の実績を持ちます。</p>
+                </div>
+                <div class="origin-item">
+                    <h3><i class="fas fa-cog"></i> CDCM酸洗・冷延ライン</h3>
+                    <p>1995年導入。初の海外技術導入設備で高品質な冷延製品を生産します。</p>
+                </div>
+                <div class="origin-item">
+                    <h3><i class="fas fa-handshake"></i> 本鋼–POSCO 冷間圧延工場</h3>
+                    <p>2006年稼働。国際合弁による技術力強化で、高精度な冷延製品を提供します。</p>
+                </div>
             </div>
         </div>
 
@@ -52,37 +93,38 @@ export const bengangSteelContent = `
             <h2>主な製品ラインナップ</h2>
             <div class="name-origin">
                 <div class="origin-item">
-                    <h3><i class="fas fa-scroll"></i> 熱間圧延コイル</h3>
-                    <p>高温で圧延された鋼板で、様々な厚さと幅に対応。自動車、家電、建築など幅広い用途に使用されます。</p>
+                    <h3><i class="fas fa-scroll"></i> 熱間圧延製品</h3>
+                    <p>1700mm・2300mm熱間圧延ラインで生産。自動車、家電、建築など幅広い用途に対応する高品質コイル製品です。</p>
                 </div>
                 <div class="origin-item">
-                    <h3><i class="fas fa-snowflake"></i> 冷間圧延コイル</h3>
-                    <p>常温で圧延された鋼板で、表面が平滑で寸法精度が高い。精密加工が必要な製品に最適です。</p>
+                    <h3><i class="fas fa-snowflake"></i> 冷間圧延製品</h3>
+                    <p>CDCM酸洗・冷延ライン、本鋼–POSCO工場で生産。表面が平滑で寸法精度が高く、自動車用鋼を中心に高精度な製品を提供します。</p>
                 </div>
                 <div class="origin-item">
-                    <h3><i class="fas fa-shield-alt"></i> 溶融亜鉛めっき鋼板</h3>
-                    <p>優れた耐食性を持つめっき鋼板。建築材料、自動車部品などに広く使用されています。</p>
+                    <h3><i class="fas fa-shield-alt"></i> 溶融亜鉛めっき鋼板(GI/GA)</h3>
+                    <p>優れた耐食性を持つめっき鋼板。建築材料、自動車部品など、防錆性能が求められる用途に最適です。</p>
                 </div>
                 <div class="origin-item">
-                    <h3><i class="fas fa-bolt"></i> 電気亜鉛めっき鋼板</h3>
-                    <p>電気めっきによる均一な被膜。家電製品や精密機器に適しています。</p>
+                    <h3><i class="fas fa-bolt"></i> 電気亜鉛めっき鋼板(EG)</h3>
+                    <p>電気めっきによる均一な被膜。家電製品や精密機器に適した高品質めっき製品です。</p>
                 </div>
             </div>
         </div>
 
         <div class="content-block">
             <h2>厚板製品</h2>
-            <p>様々な厚さと幅に対応した高品質鋼板をご提供します。造船、橋梁、建築構造物など、大型構造物の製造に使用されます。</p>
+            <p>一般構造用圧延鋼材(JIS G 3101)として認証取得。造船、橋梁、建築構造物など、大型構造物の製造に使用される高品質厚板を提供します。</p>
             <ul style="list-style: none; margin-top: 1rem;">
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 優れた溶接性</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 高い強度と靭性</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 多様な厚さ・サイズに対応</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 優れた溶接性と加工性</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 高い強度と靭性を実現</li>
+                <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 0.5rem;"></i> 多様な厚さ・サイズに対応可能</li>
             </ul>
         </div>
 
         <div class="commitment-box">
-            <h3><i class="fas fa-award"></i> 品質への取り組み</h3>
-            <p>本鋼の普通鋼製品は、日本工業規格(JIS)の厳格な基準をクリアし、認証を取得しています。これにより、お客様に安心してご使用いただける高品質な鋼材をお届けします。</p>
+            <h3><i class="fas fa-award"></i> 品質への取り組みと実績</h3>
+            <p>本鋼集団の普通鋼製品は、日本工業規格(JIS)の厳格な基準をクリアし、認証を取得しています。2014年には本鋼板材製品研究院を設立し、研究開発体制を強化。自動車用鋼を中心に、冷延・亜鉛めっきまで一貫生産体制により、お客様に安心してご使用いただける高品質な鋼材を提供しています。</p>
+            <p style="margin-top: 1rem;">2010–2014年には国内鉄鋼業界で輸出量首位を達成し、国際市場でも高い評価を得ています。</p>
         </div>
     </div>
 </section>
