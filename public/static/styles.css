@@ -256,6 +256,43 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* イントロセクション（文章とボタン） */
+.intro-content-with-button {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.intro-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .intro-content-with-button {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .intro-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* 画像付きコンテンツセクション */
 .content-with-image {
     display: grid;
@@ -391,10 +428,6 @@ body {
     font-size: 1.05rem;
     line-height: 1.9;
     margin-bottom: 1.5rem;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 
 /* 会社情報グリッド */

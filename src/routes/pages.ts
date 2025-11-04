@@ -46,16 +46,13 @@ export const homeContent = `
     <div class="container">
         <h2 class="section-title">株式会社萬橡和について</h2>
         
-        <div class="content-with-image">
-            <div class="intro-content">
+        <div class="intro-content-with-button">
+            <div class="intro-text">
                 <p>株式会社萬橡和(ばんしょうわ)は、香港の「香港萬橡和國際有限公司」のグループ会社として2025年に設立されました。</p>
                 <p>「萬橡和」は、「万象(宇宙・天地のすべて)」に木偏を添えて自然への敬意を示し、日本文化の要でもある「和」を重ねることで、自然の摂理と調和して価値を生む企業姿勢を表しています。</p>
-                <div style="text-align: center; margin-top: 2.5rem;">
-                    <a href="/about" class="btn btn-primary">会社情報へ <i class="fas fa-arrow-right"></i></a>
-                </div>
             </div>
-            <div class="content-image">
-                <img src="https://cdn.pixabay.com/photo/2017/04/28/09/01/architecture-2267789_1280.jpg" alt="製鉄所の風景" loading="lazy">
+            <div class="intro-button">
+                <a href="/about" class="btn btn-primary">会社情報へ <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
