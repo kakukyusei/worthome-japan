@@ -259,7 +259,7 @@ body {
 /* イントロセクション（文章とボタン） */
 .intro-content-with-button {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 3rem;
     margin: 2rem 0;
 }
@@ -285,9 +285,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    padding: 2rem 2.5rem;
-    min-height: 140px;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    min-height: 70px;
     background: linear-gradient(135deg, #8b9299, #6c757d);
     color: var(--white);
     border: 2px solid var(--primary-color);
@@ -306,18 +306,19 @@ body {
 }
 
 .btn-vertical i:first-child {
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
 }
 
 .btn-vertical span {
-    font-size: 1rem;
+    font-size: 0.95rem;
     letter-spacing: 0.05em;
+    line-height: 1;
 }
 
 .btn-vertical i:last-child {
-    font-size: 1.2rem;
-    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    margin-top: 0;
 }
 
 @media (max-width: 768px) {
