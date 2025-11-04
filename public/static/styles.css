@@ -259,7 +259,7 @@ body {
 /* イントロセクション（文章とボタン） */
 .intro-content-with-button {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
     margin: 2rem 0;
 }
@@ -305,20 +305,16 @@ body {
     border-color: var(--secondary-color);
 }
 
-.btn-vertical i:first-child {
+.btn-vertical i {
     font-size: 1.2rem;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .btn-vertical span {
     font-size: 0.95rem;
     letter-spacing: 0.05em;
     line-height: 1;
-}
-
-.btn-vertical i:last-child {
-    font-size: 0.9rem;
-    margin-top: 0;
+    margin: 0;
 }
 
 @media (max-width: 768px) {

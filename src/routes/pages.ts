@@ -54,7 +54,6 @@ export const homeContent = `
                 <a href="/about" class="btn btn-vertical">
                     <i class="fas fa-building"></i>
                     <span>会社情報へ</span>
-                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
