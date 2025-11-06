@@ -1,6 +1,6 @@
 // 製品詳細ページ内容 - PPTから再構成
 
-// 本鋼普通鋼詳細
+// 本鋼普通鋼詳細（本鋼特殊鋼の内容を統合）
 export const bengangSteelContent = `
 <section class="content-section">
     <div class="container">
@@ -47,24 +47,8 @@ export const bengangSteelContent = `
                 </table>
             </div>
         </div>
-    </div>
-</section>
-`;
-
-// 本鋼特殊鋼詳細
-export const bengangSpecialContent = `
-<section class="content-section">
-    <div class="container">
-        <div class="product-detail-header">
-            <h2>本鋼特殊鋼 - 高精度加工と優れた耐久性</h2>
-            <p class="lead">本鋼の特殊鋼は、自動車産業を中心に、高い強度と優れた加工性を兼ね備えた高品質素材として広く採用されています。</p>
-        </div>
 
         <div class="content-block">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="/static/images/products/image15.jpeg" alt="本鋼車輪用鋼" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
-            </div>
-            
             <h2><i class="fas fa-car"></i> 熱間圧延——車輪用鋼（概要）</h2>
             <p>強度が高く、プレス荷重に優れ、良好な溶接性能および耐疲労性能を備えています。3大シリーズで10種類以上の品種を有し、板厚は2.3～25.0mmをカバーしています。</p>
             <p>自動車の軽量化と低コスト化の持続的な発展トレンドに対応するため、650MPa級の高強度車輪用鋼BG650CLの試作に成功しました。</p>
@@ -223,10 +207,6 @@ export const bengangSpecialContent = `
         </div>
 
         <div class="content-block">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="/static/images/products/image16.jpeg" alt="自動車フレーム用鋼" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
-            </div>
-            
             <h2><i class="fas fa-truck"></i> 熱間圧延——自動車フレーム</h2>
             <p>自動車の大型車両、特にトラックやバスのフレーム用に開発された高強度鋼材です。軽量化と耐久性を両立し、コスト効率にも優れています。</p>
             <p>大梁用鋼は、自動車産業の厳しい要求に応えるため、高強度と優れた加工性・溶接性を併せ持ち、設計の自由度を高めています。</p>
@@ -251,10 +231,6 @@ export const bengangSpecialContent = `
         </div>
 
         <div class="content-block">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="/static/images/products/image17.jpeg" alt="パイプライン用鋼" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
-            </div>
-            
             <h2><i class="fas fa-water"></i> 熱間圧延——パイプライン</h2>
             <p>高強度・高靭性・耐食性に優れ、石油・天然ガス輸送用として中国トップレベルの品質を実現し、国際市場にも供給されています。</p>
             <p>Φ1422×21.4mm および Φ1219×22mm など大径パイプライン鋼板を量産供給し、厚さ22mm以下の高級グレード製品に対応可能です。</p>
@@ -347,7 +323,181 @@ export const bengangSpecialContent = `
 
         <div class="commitment-box">
             <h3><i class="fas fa-industry"></i> 用途と実績</h3>
-            <p>本鋼の特殊鋼製品は、自動車産業を中心に、エネルギー産業、建築、鉄道車両など、幅広い分野で採用されています。高い品質と安定供給により、お客様の製造プロセスをサポートします。</p>
+            <p>本鋼の普通鋼製品は、自動車産業を中心に、エネルギー産業、建築、鉄道車両など、幅広い分野で採用されています。高い品質と安定供給により、お客様の製造プロセスをサポートします。</p>
+        </div>
+    </div>
+</section>
+`;
+
+// 本鋼特殊鋼詳細（新しい内容：工具鋼と構造用鋼・軸受鋼）
+export const bengangSpecialContent = `
+<section class="content-section">
+    <div class="container">
+        <div class="product-detail-header">
+            <h2>本鋼特殊鋼 - 高精度加工と優れた耐久性</h2>
+            <p class="lead">本鋼の特殊鋼は、工具鋼から構造用鋼・軸受鋼まで、多様な産業ニーズに応える高品質素材を提供しています。精密金型製造から機械部品まで、幅広い用途に対応します。</p>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-tools"></i> 工具鋼（Tool and Die Steel）</h2>
+            <p>精密金型から産業機器まで、高い耐摩耗性と加工性を両立した工具鋼製品を提供しています。多様な鋼種と製品形状により、お客様の幅広いニーズに対応します。</p>
+            
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">主な生産鋼種</h3>
+            <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+                <div class="badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span class="badge">SKD11</span>
+                    <span class="badge">SUS420J2</span>
+                    <span class="badge">20/9SiCr</span>
+                    <span class="badge">D2/O1</span>
+                    <span class="badge">SKM93/SKM93H</span>
+                    <span class="badge">CR12MOV/20#</span>
+                    <span class="badge">1.2083/1.2316</span>
+                    <span class="badge">1.2083ESR</span>
+                    <span class="badge">1.2316MOD ESR</span>
+                    <span class="badge">X33CrS16Mod</span>
+                    <span class="badge">X36CrMo17mod+N</span>
+                    <span class="badge">X38CrMoV5-3Mod</span>
+                    <span class="badge">1.2344MOD ESR</span>
+                    <span class="badge">T8A</span>
+                    <span class="badge">40Cr</span>
+                    <span class="badge">1.2201</span>
+                    <span class="badge">1.2083/H13</span>
+                    <span class="badge">1.2311</span>
+                    <span class="badge">SKS93</span>
+                    <span class="badge">A8MOD</span>
+                    <span class="badge">AISI420</span>
+                    <span class="badge">CrWMn</span>
+                    <span class="badge">40Cr13</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">主な製品形状</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
+                    <i class="fas fa-square" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Flat Bar（平鋼）</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">板状の工具鋼</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
+                    <i class="fas fa-circle" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Round Bar（丸棒）</h4>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray);">丸棒状の工具鋼</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">製品寸法範囲</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1rem;">
+                <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 1rem;">Flat Bar 寸法範囲</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-ruler-horizontal" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>厚さ (Thickness):</strong> 6mm ～ 400mm</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-ruler-vertical" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>幅 (Width):</strong> 100mm ～ 1000mm</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-ruler" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>長さ (Length):</strong> 2000mm ～ 5800mm</li>
+                    </ul>
+                </div>
+
+                <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 1rem;">Round Bar 寸法範囲</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-circle-notch" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>直径 (Diameter):</strong> 20mm ～ 600mm</li>
+                        <li style="padding: 0.4rem 0;"><i class="fas fa-ruler" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>長さ (Length):</strong> 2000mm ～ 5800mm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">納入状態（Delivery Condition）</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                <div style="text-align: center; padding: 1rem; background: var(--light-color); border-radius: 6px;">
+                    <h4 style="font-size: 0.95rem;">Hot Rolled</h4>
+                    <p style="font-size: 0.85rem; color: var(--mid-gray);">熱間圧延</p>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--light-color); border-radius: 6px;">
+                    <h4 style="font-size: 0.95rem;">Annealed</h4>
+                    <p style="font-size: 0.85rem; color: var(--mid-gray);">焼鈍処理</p>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--light-color); border-radius: 6px;">
+                    <h4 style="font-size: 0.95rem;">Sand Blasted</h4>
+                    <p style="font-size: 0.85rem; color: var(--mid-gray);">サンドブラスト</p>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--light-color); border-radius: 6px;">
+                    <h4 style="font-size: 0.95rem;">Peeled</h4>
+                    <p style="font-size: 0.85rem; color: var(--mid-gray);">皮剥き</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">輸出情報</h3>
+            <div style="background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(196, 30, 58, 0.1)); padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.4rem 0;"><i class="fas fa-globe-asia" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>主な輸出先:</strong> 韓国、台湾</li>
+                    <li style="padding: 0.4rem 0;"><i class="fas fa-box" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>最低注文量:</strong> 25mt per steel grade And 2mt per size</li>
+                    <li style="padding: 0.4rem 0;"><i class="fas fa-shipping-fast" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>輸送方法:</strong> Shipped by container（コンテナ輸送）</li>
+                    <li style="padding: 0.4rem 0;"><i class="fas fa-calendar-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>納期:</strong> 60-90 days for shipment（出荷まで60～90日）</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-cog"></i> 構造用鋼・軸受鋼（Mechanical Manufacturing Steel, Bearing Steel）</h2>
+            <p>機械製造分野向けの高強度構造用鋼と、精密機械部品に使用される軸受鋼を提供しています。自動車産業から産業機械まで、幅広い用途に対応する高品質素材です。</p>
+            
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">主な生産鋼種</h3>
+            <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+                <div class="badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span class="badge">C45</span>
+                    <span class="badge">42CrMo4</span>
+                    <span class="badge">S355J2</span>
+                    <span class="badge">20MnCr5</span>
+                    <span class="badge">EN24</span>
+                    <span class="badge">EN353</span>
+                    <span class="badge">EN4340</span>
+                    <span class="badge">EN4130</span>
+                    <span class="badge">SAE52100</span>
+                    <span class="badge">S20C</span>
+                    <span class="badge">S45C</span>
+                    <span class="badge">SCR440H</span>
+                    <span class="badge">SCM440</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">主な製品形状</h3>
+            <div style="text-align: center; padding: 2rem; background: var(--light-color); border-radius: 8px; margin-top: 1rem;">
+                <i class="fas fa-circle" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Round Bar（丸棒）</h4>
+                <p style="font-size: 0.95rem; color: var(--mid-gray);">高強度・高精度の丸棒製品</p>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">輸出情報</h3>
+            <div style="background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(196, 30, 58, 0.1)); padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.4rem 0;"><i class="fas fa-globe" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>主な輸出先:</strong> 欧州、インド、韓国</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">特殊鋼種／仕様の最低注文量</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 1rem;"><i class="fas fa-industry"></i> 電気炉製鋼</h4>
+                    <p style="font-size: 1.1rem; font-weight: bold; color: var(--primary-color);">400MT per steel grade</p>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray); margin-top: 0.5rem;">鋼種あたり400トン</p>
+                </div>
+
+                <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 1rem;"><i class="fas fa-fire"></i> 転炉製鋼</h4>
+                    <p style="font-size: 1.1rem; font-weight: bold; color: var(--primary-color);">500MT per steel grade</p>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray); margin-top: 0.5rem;">鋼種あたり500トン</p>
+                </div>
+
+                <div style="background: var(--light-color); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 1rem;"><i class="fas fa-circle"></i> 小径バー（直径85mm以下）</h4>
+                    <p style="font-size: 1.1rem; font-weight: bold; color: var(--primary-color);">400MT per size</p>
+                    <p style="font-size: 0.9rem; color: var(--mid-gray); margin-top: 0.5rem;">サイズあたり400トン</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="commitment-box">
+            <h3><i class="fas fa-industry"></i> 用途と実績</h3>
+            <p>本鋼の特殊鋼製品は、金型製造、自動車産業、機械製造、精密機器など、幅広い分野で採用されています。高い品質と安定供給、充実した技術サポートにより、お客様の製造プロセスを強力にサポートします。</p>
         </div>
     </div>
 </section>
@@ -459,17 +609,14 @@ export const pangangSpecialContent = `
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image24.png" alt="棒鋼・線材" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>棒鋼・線材</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">H13、DG-1、NAK80など</p>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image25.png" alt="薄板・平鋼" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>薄板・平鋼</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">DC53、D2、SKS93など</p>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image26.png" alt="モジュール" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>モジュール</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">P20、718、SKD11など</p>
                 </div>
@@ -502,12 +649,10 @@ export const pangangSpecialContent = `
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image27.png" alt="発電用高性能合金" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>発電用高性能合金</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">12Cr1MoV、15CrMoGなど</p>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image28.png" alt="厚肉管" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>厚肉管</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">P91、P92、T92</p>
                 </div>
@@ -520,17 +665,14 @@ export const pangangSpecialContent = `
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image29.png" alt="オーステナイト系" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>オーステナイト系</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">SUS304/316相当</p>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image30.png" alt="マルテンサイト系" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>マルテンサイト系</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">SUS410/420相当</p>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: var(--light-color); border-radius: 8px;">
-                    <img src="/static/images/products/image31.png" alt="フェライト系" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 4px;">
                     <h4>フェライト系</h4>
                     <p style="font-size: 0.9rem; color: var(--mid-gray);">SUS430相当</p>
                 </div>
@@ -564,59 +706,34 @@ export const pangangTitaniumContent = `
             <h2>製品ラインナップ</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <img src="/static/images/products/image32.png" alt="スポンジチタン" style="max-width: 80%; height: auto; border-radius: 4px;">
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">スポンジチタン</h3>
                     <p style="font-size: 0.95rem;">高純度原料、インゴット・合金製造の基本素材</p>
                 </div>
 
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <img src="/static/images/products/image33.png" alt="チタンインゴット" style="max-width: 80%; height: auto; border-radius: 4px;">
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">チタンインゴット</h3>
                     <p style="font-size: 0.95rem;">10t級の大型インゴットから小型まで多様なサイズに対応</p>
                 </div>
 
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <i class="fas fa-circle" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">丸棒</h3>
                     <p style="font-size: 0.95rem;">Rolled Round Bar、精密加工用途向け</p>
                 </div>
 
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <i class="fas fa-th-large" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">冷間圧延板</h3>
                     <p style="font-size: 0.95rem;">Cold Rolled Sheet、高精度・均一性を実現</p>
                 </div>
 
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <i class="fas fa-grip-lines" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">コイル板</h3>
                     <p style="font-size: 0.95rem;">Titanium Flat Bar and Coiled Sheet、多様な厚みに対応</p>
                 </div>
 
                 <div style="padding: 2rem; background: var(--light-color); border-radius: 8px; border-top: 4px solid var(--primary-color);">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <i class="fas fa-ring" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    </div>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">チタンパイプ</h3>
                     <p style="font-size: 0.95rem;">Seamless Tube、押出管（Extruded Tube）、高純度・高精度</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="content-block">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="/static/images/products/image34.png" alt="10tチタンインゴット" style="max-width: 100%; max-height: 400px; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
-                <p style="margin-top: 1rem; font-style: italic; color: var(--mid-gray);">10t チタンインゴット - 高純度・高強度の基本素材</p>
             </div>
         </div>
 
