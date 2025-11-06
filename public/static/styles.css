@@ -6,28 +6,26 @@
 }
 
 :root {
-    /* ステンレススタイルの配色 - 光沢感のあるシルバー・グレー・ホワイト */
-    --primary-color: #8b9299;      /* ステンレスグレー */
-    --secondary-color: #6c757d;    /* ダークステンレスグレー */
-    --accent-color: #adb5bd;       /* ライトステンレスグレー */
-    --dark-color: #495057;         /* チャコールグレー */
-    --mid-gray: #6c757d;
-    --light-gray: #e9ecef;         /* シルバーホワイト */
+    /* プロフェッショナルで明快なカラースキーム */
+    --primary-color: #c41e3a;      /* 力強いレッド */
+    --secondary-color: #a01829;    /* ダークレッド */
+    --accent-color: #e94560;       /* ライトレッド */
+    --dark-color: #2d2d2d;         /* ダークグレー */
+    --mid-gray: #555555;
+    --light-gray: #f5f5f5;         /* 明るいグレー */
     --white: #ffffff;
-    --text-color: #343a40;
-    --border-color: #ced4da;       /* ステンレス境界線 */
-    --shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12);
-    --metallic-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    --steel-gradient: linear-gradient(to right, #bdc3c7 0%, #ecf0f1 50%, #bdc3c7 100%);
+    --text-color: #333333;
+    --border-color: #dddddd;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 body {
-    font-family: 'MS Pゴシック', 'MS PGothic', 'Osaka', sans-serif;
-    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
+    line-height: 1.7;
     color: var(--text-color);
-    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
-    font-size: 14px;
+    background: var(--white);
+    font-size: 15px;
 }
 
 .container {
@@ -41,14 +39,12 @@ body {
 ======================================== */
 
 .navbar {
-    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to right, #adb5bd, #dee2e6, #adb5bd) 1;
+    background: var(--white);
+    border-bottom: 3px solid var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-top: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .navbar .container {
@@ -118,8 +114,8 @@ body {
 .nav-menu > li > a:hover,
 .nav-menu > li > a.active {
     color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 3px solid var(--primary-color);
+    background: var(--light-gray);
 }
 
 .dropdown-toggle {
@@ -177,7 +173,7 @@ body {
 
 .hero {
     position: relative;
-    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    background: var(--white);
     padding: 0;
 }
 
@@ -288,21 +284,20 @@ body {
     gap: 0.5rem;
     padding: 1rem 2rem;
     min-height: 70px;
-    background: linear-gradient(135deg, #8b9299, #6c757d);
+    background: var(--primary-color);
     color: var(--white);
-    border: 2px solid var(--primary-color);
-    border-radius: 8px;
+    border: none;
+    border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.2);
     font-weight: 600;
 }
 
 .btn-vertical:hover {
-    background: linear-gradient(135deg, #6c757d, #495057);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3);
 }
 
 .btn-vertical i {
@@ -422,7 +417,7 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #adb5bd, #6c757d);
+    background: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -430,7 +425,7 @@ body {
     color: var(--white);
     font-size: 1.2rem;
     margin-right: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(196, 30, 58, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -1032,7 +1027,7 @@ body {
 }
 
 .product-header {
-    background: linear-gradient(135deg, #8b9299, #6c757d);
+    background: var(--primary-color);
     color: var(--white);
     padding: 2.5rem 2rem;
     text-align: center;
@@ -1260,14 +1255,13 @@ body {
 .btn-primary {
     background: var(--primary-color);
     color: var(--white);
-    border: 1px solid var(--primary-color);
+    border: none;
 }
 
 .btn-primary:hover {
     background: var(--secondary-color);
-    border-color: var(--secondary-color);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
 }
 
 .btn i {
@@ -1279,26 +1273,11 @@ body {
 ======================================== */
 
 .cta-section {
-    background: linear-gradient(135deg, rgba(233, 236, 239, 0.9), rgba(173, 181, 189, 0.85)),
-                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--dark-color);
+    background: var(--dark-color);
     text-align: center;
     padding: 4rem 2rem;
     position: relative;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(248, 249, 250, 0.7));
-    z-index: 1;
+    color: var(--white);
 }
 
 .cta-section .container {
@@ -1319,15 +1298,14 @@ body {
 }
 
 .cta-section .btn {
-    background: linear-gradient(135deg, #8b9299, #6c757d);
+    background: var(--primary-color);
     color: var(--white);
-    border: 1px solid var(--primary-color);
+    border: none;
 }
 
 .cta-section .btn:hover {
-    background: linear-gradient(135deg, #6c757d, #495057);
-    border-color: var(--secondary-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: var(--accent-color);
+    box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3);
 }
 
 /* ========================================
@@ -1335,25 +1313,10 @@ body {
 ======================================== */
 
 .footer {
-    background: linear-gradient(135deg, rgba(108, 117, 125, 0.95), rgba(73, 80, 87, 0.98)),
-                url('https://page.gensparksite.com/v1/base64_upload/3241ab792c53d3c60c8ee058d4f69684');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: var(--dark-color);
     color: var(--white);
     padding: 3rem 2rem 1.5rem;
     position: relative;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(108, 117, 125, 0.85), rgba(73, 80, 87, 0.9));
-    z-index: 1;
 }
 
 .footer > * {
