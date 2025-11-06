@@ -77,7 +77,6 @@ export const getFooter = () => `
                 <h4>お問い合わせ</h4>
                 <ul>
                     <li><a href="/contact">お問い合わせフォーム</a></li>
-                    <li><a href="https://worthome.co.jp" target="_blank">worthome.co.jp</a></li>
                 </ul>
             </div>
         </div>

@@ -239,7 +239,6 @@ npm run deploy:prod
 
 - **会社名**: 株式会社萬橡和 (WORTHOME)
 - **所在地**: 大阪市西区阿波座2-1-1 CAMCO西本町ビル10F (鞍鋼ジャパン内)
-- **Web**: https://worthome.co.jp
 
 ## 📝 開発履歴
 
