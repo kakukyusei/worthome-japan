@@ -6,26 +6,27 @@
 }
 
 :root {
-    /* プロフェッショナルで明快なカラースキーム - クールな黒系 */
-    --primary-color: #2d2d2d;      /* ダークグレー */
-    --secondary-color: #3a3a3a;    /* ミディアムグレー */
-    --accent-color: #4a4a4a;       /* ライトグレー */
-    --dark-color: #2d2d2d;         /* ダークグレー */
-    --mid-gray: #555555;
-    --light-gray: #f5f5f5;         /* 明るいグレー */
+    /* モダンで明るいカラースキーム */
+    --primary-color: #1a73e8;      /* 明るいブルー */
+    --secondary-color: #5f6368;    /* ミディアムグレー */
+    --accent-color: #34a853;       /* アクセントグリーン */
+    --dark-color: #202124;         /* ソフトブラック */
+    --mid-gray: #5f6368;           /* ミディアムグレー */
+    --light-gray: #f8f9fa;         /* とても明るいグレー */
     --white: #ffffff;
-    --text-color: #333333;
-    --border-color: #dddddd;
-    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --text-color: #3c4043;         /* ソフトダークグレー */
+    --border-color: #e8eaed;       /* 明るいボーダー */
+    --shadow: 0 1px 2px rgba(60, 64, 67, 0.1);
+    --shadow-lg: 0 2px 8px rgba(60, 64, 67, 0.15);
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--text-color);
     background: var(--white);
     font-size: 15px;
+    font-weight: 400;
 }
 
 .container {
@@ -40,11 +41,11 @@ body {
 
 .navbar {
     background: var(--white);
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
 }
 
 .navbar .container {
@@ -67,11 +68,11 @@ body {
 }
 
 .nav-brand h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--dark-color);
     margin: 0;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
 .nav-subtitle {
@@ -81,8 +82,8 @@ body {
 .mobile-menu-toggle {
     display: none;
     background: none;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem 0.75rem;
@@ -185,7 +186,7 @@ body {
 
 .hero-title {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
     letter-spacing: 0.05em;
@@ -233,7 +234,7 @@ body {
 
 .feature-item h3 {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.05em;
 }
 
@@ -376,13 +377,13 @@ body {
 
 .section-title {
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
     position: relative;
     padding-bottom: 0.8rem;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .section-title::after {
@@ -432,7 +433,7 @@ body {
 
 .info-item h3 {
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.75rem;
     color: var(--mid-gray);
     letter-spacing: 0.05em;
@@ -440,7 +441,7 @@ body {
 
 .info-item p {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-color);
 }
 
@@ -478,7 +479,7 @@ body {
 .page-header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
     color: var(--dark-color);
 }
@@ -515,11 +516,11 @@ body {
 
 .content-block h2 {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .lead {
@@ -561,7 +562,7 @@ body {
     color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* テーブル */
@@ -583,7 +584,7 @@ body {
 
 .info-table th {
     background: var(--light-gray);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color);
     width: 28%;
 }
@@ -617,7 +618,7 @@ body {
     color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .integrated-system i {
@@ -662,7 +663,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     box-shadow: var(--shadow);
 }
 
@@ -678,7 +679,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1.75rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .pillar-content p {
@@ -708,7 +709,7 @@ body {
     font-size: 1.6rem;
     margin-bottom: 1.75rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .commitment-box h3 i {
@@ -787,12 +788,12 @@ body {
     color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .president-profile .profile-name {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--text-color);
     margin-bottom: 1.25rem;
 }
@@ -824,7 +825,7 @@ body {
     text-align: center;
     min-width: 320px;
     box-shadow: var(--shadow);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     transition: all 0.3s;
 }
 
@@ -836,7 +837,7 @@ body {
 .partner-box.main {
     background: var(--primary-color);
     color: var(--white);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
     border-color: var(--primary-color);
 }
@@ -889,7 +890,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     flex-shrink: 0;
     box-shadow: var(--shadow);
 }
@@ -898,7 +899,7 @@ body {
     color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .role-tags {
@@ -977,7 +978,7 @@ body {
 
 .product-header h3 {
     font-size: 1.35rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .product-body {
@@ -987,7 +988,7 @@ body {
 .product-body h4 {
     color: var(--primary-color);
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
 }
 
@@ -1016,13 +1017,13 @@ body {
     margin-top: 1.25rem;
     color: var(--secondary-color);
     text-decoration: none;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
     transition: border-color 0.3s;
 }
 
 .product-link:hover {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 /* ========================================
@@ -1038,10 +1039,10 @@ body {
 }
 
 .product-detail-header h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
+    color: var(--dark-color);
+    font-size: 1.85rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .badges {
@@ -1052,16 +1053,19 @@ body {
 }
 
 .badge {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 0.6rem 1.25rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    background: rgba(26, 115, 232, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(26, 115, 232, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 400;
 }
 
 .badge.jis {
-    background: #2e7d32;
+    background: rgba(52, 168, 83, 0.1);
+    color: #2e7d32;
+    border: 1px solid rgba(52, 168, 83, 0.3);
 }
 
 .specs-table {
@@ -1083,7 +1087,7 @@ body {
 .specs-table th {
     background: var(--primary-color);
     color: var(--white);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .specs-table tr:nth-child(even) {
@@ -1110,7 +1114,7 @@ body {
 
 .form-group label {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.75rem;
     color: var(--text-color);
 }
@@ -1156,7 +1160,7 @@ body {
 .contact-info h3 {
     color: var(--primary-color);
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .contact-info p {
@@ -1180,7 +1184,7 @@ body {
     border: none;
     border-radius: 3px;
     font-size: 0.95rem;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s;
@@ -1223,7 +1227,7 @@ body {
 .cta-section h2 {
     font-size: 2.2rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .cta-section p {
@@ -1269,14 +1273,14 @@ body {
 .footer-section h3 {
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .footer-section h4 {
     font-size: 1.15rem;
     margin-bottom: 1.25rem;
     color: var(--light-gray);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .footer-section p {
@@ -1498,7 +1502,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: all 0.3s;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .dot.active {
