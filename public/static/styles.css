@@ -261,7 +261,7 @@ body {
 /* イントロセクション（文章のみ） */
 .intro-text-centered {
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 2rem 0;
     text-align: left;
 }
 
