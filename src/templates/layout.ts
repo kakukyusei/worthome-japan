@@ -30,9 +30,9 @@ export const getNavbar = (activePage: string = '') => `
                 <a href="#" class="dropdown-toggle ${activePage.startsWith('products') ? 'active' : ''}">製品情報 <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/products" ${activePage === 'products' ? 'class="active"' : ''}>取り扱う製品</a></li>
+                    <li><a href="/products/ankou-steel" ${activePage === 'products-ankou-steel' ? 'class="active"' : ''}>鞍鋼普通鋼</a></li>
                     <li><a href="/products/bengang-steel" ${activePage === 'products-bengang-steel' ? 'class="active"' : ''}>本鋼普通鋼</a></li>
                     <li><a href="/products/bengang-special" ${activePage === 'products-bengang-special' ? 'class="active"' : ''}>本鋼特殊鋼</a></li>
-                    <li><a href="/products/ankou-thick-plate" ${activePage === 'products-ankou-thick-plate' ? 'class="active"' : ''}>鞍鋼厚板</a></li>
                     <li><a href="/products/pangang-special" ${activePage === 'products-pangang-special' ? 'class="active"' : ''}>攀鋼特殊鋼</a></li>
                     <li><a href="/products/pangang-titanium" ${activePage === 'products-pangang-titanium' ? 'class="active"' : ''}>攀鋼チタン・チタン合金</a></li>
                 </ul>

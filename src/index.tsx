@@ -14,6 +14,7 @@ import {
   contactContent 
 } from './routes/pages2'
 import {
+  ankouSteelContent,
   bengangSteelContent,
   bengangSpecialContent,
   ankouThickPlateContent,
@@ -58,6 +59,11 @@ app.get('/products', (c) => {
   return c.html(getPageLayout('取り扱う製品', productsContent, 'products'))
 })
 
+// 鞍鋼普通鋼（NEW - 最優先）
+app.get('/products/ankou-steel', (c) => {
+  return c.html(getPageLayout('鞍鋼普通鋼', ankouSteelContent, 'products-ankou-steel'))
+})
+
 app.get('/products/bengang-steel', (c) => {
   return c.html(getPageLayout('本鋼普通鋼', bengangSteelContent, 'products-bengang-steel'))
 })
@@ -66,16 +72,17 @@ app.get('/products/bengang-special', (c) => {
   return c.html(getPageLayout('本鋼特殊鋼', bengangSpecialContent, 'products-bengang-special'))
 })
 
-app.get('/products/ankou-thick-plate', (c) => {
-  return c.html(getPageLayout('鞍鋼厚板', ankouThickPlateContent, 'products-ankou-thick-plate'))
-})
-
 app.get('/products/pangang-special', (c) => {
   return c.html(getPageLayout('攀鋼特殊鋼', pangangSpecialContent, 'products-pangang-special'))
 })
 
 app.get('/products/pangang-titanium', (c) => {
   return c.html(getPageLayout('攀鋼チタン・チタン合金', pangangTitaniumContent, 'products-pangang-titanium'))
+})
+
+// 旧URLリダイレクト（互換性維持）
+app.get('/products/ankou-thick-plate', (c) => {
+  return c.redirect('/products/ankou-steel', 301)
 })
 
 // お問い合わせ

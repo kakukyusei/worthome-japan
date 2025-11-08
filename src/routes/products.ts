@@ -1,5 +1,60 @@
 // 製品詳細ページ内容 - PPTから再構成
 
+// 鞍鋼普通鋼詳細（PPTスライド9の内容）
+export const ankouSteelContent = `
+<section class="content-section">
+    <div class="container">
+        <div class="product-detail-header">
+            <h2>鞍鋼普通鋼 - 幅広い産業向け高品質鋼材</h2>
+            <p class="lead">鞍鋼（Ansteel Group）は幅広い産業向けに高品質な鋼材製品を提供しています。各製品は厳格な品質管理システムにより製造され、国内外の基準を満たしています。多様な規格と仕様の製品ラインナップが、様々な産業と用途に対応しています。</p>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-layer-group"></i> 厚板（プレート）</h2>
+            <p><strong>製品種類：</strong> 一般構造用鋼、建築構造用鋼、低降伏点鋼、建築耐火鋼</p>
+            <p><strong>主な用途：</strong> 建築・土木構造物、高層ビル、地震エネルギー吸収部材</p>
+            <p><strong>板厚範囲：</strong> 6.0 ~ 150.0 mm</p>
+            <p><strong>主な鋼種：</strong> SS400、SM400A/B/C、SM490A/B/C、SN400A/B/C、Q235B、Q345B</p>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-fire"></i> 熱延鋼板</h2>
+            <p><strong>製品種類：</strong> 炭素構造用鋼、低合金構造用鋼、溶接構造用鋼、低炭素鋼、製管用鋼</p>
+            <p><strong>主な用途：</strong> 一般構造用、溶接構造用、冷間圧延・冷間成形用、溶接鋼管用</p>
+            <p><strong>板厚範囲：</strong> 1.6 ~ 25.4 mm</p>
+            <p><strong>幅範囲：</strong> 700 ~ 2000 mm</p>
+            <p><strong>主な鋼種：</strong> SS330、SS400、SS490、SM400A/B/C、SM490A/B/C、SPHC、SPHD、SPHE</p>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-snowflake"></i> 冷延鋼板</h2>
+            <p><strong>製品種類：</strong> プレス用鋼、冷延二相鋼（Dual Phase Steel）、高級炭素構造用鋼</p>
+            <p><strong>主な用途：</strong> プレス加工および一般用途、構造用</p>
+            <p><strong>板厚範囲：</strong> 0.25 ~ 3.0 mm</p>
+            <p><strong>幅範囲：</strong> 600 ~ 1950 mm</p>
+            <p><strong>主な鋼種：</strong> SPCC、SPCD、SPCE、SPCF、SPCG、CR260/450DP、CR300/500DP</p>
+        </div>
+
+        <div class="content-block">
+            <h2><i class="fas fa-circle-notch"></i> 線材</h2>
+            <p><strong>製品種類：</strong> 低炭素鋼線材、高級炭素鋼線材、冷間圧造用線材、低合金鋼線材</p>
+            <p><strong>主な用途：</strong> 引抜用、冷間圧造用、構造用、溶接棒製造用、ばね鋼線製造用</p>
+            <p><strong>線径範囲：</strong> 5.5 ~ 13 mm</p>
+            <p><strong>コイル重量：</strong> 1.0 ~ 1.4 トン</p>
+            <p><strong>主な鋼種：</strong> SAE1006~1015、SWRH42A~82A、SWRCH8A~22A、30MnSi</p>
+        </div>
+
+        <div class="content-block">
+            <h2>鞍鋼集団について</h2>
+            <div class="integrated-system">
+                <p>鞍鋼集団は2021年に本鋼集団と合併し、生産量が世界3位となりました。鉱石採掘から製品製造までの一貫した生産体制により、安定した品質と供給を実現しています。</p>
+                <p>厳格な品質管理体制のもと、建築、自動車、造船、機械製造など、あらゆる産業分野に対応した高品質な鋼材を提供しております。</p>
+            </div>
+        </div>
+    </div>
+</section>
+`;
+
 // 本鋼普通鋼詳細（本鋼特殊鋼の内容を統合）
 export const bengangSteelContent = `
 <section class="content-section">

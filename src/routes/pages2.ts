@@ -128,6 +128,25 @@ export const productsContent = `
         </div>
         
         <div class="products-grid">
+            <!-- 鞍鋼普通鋼 - 最優先 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <i class="fas fa-industry"></i>
+                    <h3>鞍鋼普通鋼</h3>
+                </div>
+                <div class="product-body">
+                    <h4>幅広い産業向け高品質鋼材</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 厚板（プレート）</li>
+                        <li><i class="fas fa-check"></i> 熱延鋼板</li>
+                        <li><i class="fas fa-check"></i> 冷延鋼板</li>
+                        <li><i class="fas fa-check"></i> 線材</li>
+                        <li><i class="fas fa-check"></i> 多様な規格・仕様に対応</li>
+                    </ul>
+                    <a href="/products/ankou-steel" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
             <div class="product-card">
                 <div class="product-header">
                     <i class="fas fa-industry"></i>
@@ -140,7 +159,7 @@ export const productsContent = `
                         <li><i class="fas fa-check"></i> 冷間圧延コイル</li>
                         <li><i class="fas fa-check"></i> 溶融亜鉛めっき鋼板</li>
                         <li><i class="fas fa-check"></i> 電気亜鉛めっき鋼板</li>
-                        <li><i class="fas fa-check"></i> 厚板</li>
+                        <li><i class="fas fa-check"></i> 一般構造用圧延鋼材</li>
                     </ul>
                     <a href="/products/bengang-steel" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -154,31 +173,13 @@ export const productsContent = `
                 <div class="product-body">
                     <h4>高精度・高品質</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i> 車輪用鋼</li>
-                        <li><i class="fas fa-check"></i> 大梁用鋼</li>
-                        <li><i class="fas fa-check"></i> ラインパイプ用鋼</li>
-                        <li><i class="fas fa-check"></i> 耐候性鋼</li>
-                        <li><i class="fas fa-check"></i> 丸棒</li>
+                        <li><i class="fas fa-check"></i> 工具鋼（Tool Steel）</li>
+                        <li><i class="fas fa-check"></i> 構造用鋼</li>
+                        <li><i class="fas fa-check"></i> 軸受鋼</li>
+                        <li><i class="fas fa-check"></i> 車輪用鋼・大梁用鋼</li>
+                        <li><i class="fas fa-check"></i> 丸棒（直径20-600mm）</li>
                     </ul>
                     <a href="/products/bengang-special" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-header">
-                    <i class="fas fa-th-large"></i>
-                    <h3>鞍鋼厚板</h3>
-                </div>
-                <div class="product-body">
-                    <h4>大型構造物向け</h4>
-                    <ul>
-                        <li><i class="fas fa-check"></i> 造船用鋼板</li>
-                        <li><i class="fas fa-check"></i> 橋梁用鋼板</li>
-                        <li><i class="fas fa-check"></i> 建築構造用鋼板</li>
-                        <li><i class="fas fa-check"></i> 優れた溶接性</li>
-                        <li><i class="fas fa-check"></i> 高強度・高靭性</li>
-                    </ul>
-                    <a href="/products/ankou-thick-plate" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -190,11 +191,11 @@ export const productsContent = `
                 <div class="product-body">
                     <h4>多様な用途に対応</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i> 工具鋼</li>
-                        <li><i class="fas fa-check"></i> 構造用鋼</li>
-                        <li><i class="fas fa-check"></i> 軸受鋼</li>
+                        <li><i class="fas fa-check"></i> 工具鋼（H13, D2, SKD11等）</li>
+                        <li><i class="fas fa-check"></i> 構造用鋼・軸受鋼</li>
                         <li><i class="fas fa-check"></i> 耐熱・耐食鋼</li>
                         <li><i class="fas fa-check"></i> ステンレス鋼</li>
+                        <li><i class="fas fa-check"></i> 中国特殊鋼リーダー企業</li>
                     </ul>
                     <a href="/products/pangang-special" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -209,10 +210,10 @@ export const productsContent = `
                     <h4>軽量・高強度・耐食性</h4>
                     <ul>
                         <li><i class="fas fa-check"></i> スポンジチタン</li>
-                        <li><i class="fas fa-check"></i> チタンインゴット</li>
-                        <li><i class="fas fa-check"></i> チタン丸棒</li>
-                        <li><i class="fas fa-check"></i> チタン板</li>
-                        <li><i class="fas fa-check"></i> チタン線材</li>
+                        <li><i class="fas fa-check"></i> チタンインゴット（10t級対応）</li>
+                        <li><i class="fas fa-check"></i> チタン丸棒・板材</li>
+                        <li><i class="fas fa-check"></i> チタンパイプ</li>
+                        <li><i class="fas fa-check"></i> 航空宇宙・医療機器向け</li>
                     </ul>
                     <a href="/products/pangang-titanium" class="product-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
                 </div>

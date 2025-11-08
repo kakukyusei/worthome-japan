@@ -6,18 +6,23 @@
 }
 
 :root {
-    /* モダンで明るいカラースキーム */
-    --primary-color: #1a73e8;      /* 明るいブルー */
-    --secondary-color: #5f6368;    /* ミディアムグレー */
-    --accent-color: #34a853;       /* アクセントグリーン */
-    --dark-color: #202124;         /* ソフトブラック */
-    --mid-gray: #5f6368;           /* ミディアムグレー */
-    --light-gray: #f8f9fa;         /* とても明るいグレー */
+    /* 萬橡和カラースキーム - オレンジ・グリーン・紫 */
+    --primary-color: #ff6b35;      /* オレンジ（メインカラー） */
+    --secondary-color: #2d9c5e;    /* グリーン（セカンダリ） */
+    --accent-color: #7b4397;       /* 紫（WORTHOME関連アクセント） */
+    --dark-color: #1a1a1a;         /* ダークグレー */
+    --mid-gray: #666666;           /* ミディアムグレー */
+    --light-gray: #f5f5f5;         /* ライトグレー背景 */
     --white: #ffffff;
-    --text-color: #3c4043;         /* ソフトダークグレー */
-    --border-color: #e8eaed;       /* 明るいボーダー */
-    --shadow: 0 1px 2px rgba(60, 64, 67, 0.1);
-    --shadow-lg: 0 2px 8px rgba(60, 64, 67, 0.15);
+    --text-color: #333333;         /* テキストカラー */
+    --border-color: #e0e0e0;       /* ボーダー */
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12);
+    
+    /* グラデーション */
+    --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #ff8c5f 100%);
+    --gradient-secondary: linear-gradient(135deg, #2d9c5e 0%, #4db380 100%);
+    --gradient-accent: linear-gradient(135deg, #7b4397 0%, #9b5fb7 100%);
 }
 
 body {
