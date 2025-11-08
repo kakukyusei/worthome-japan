@@ -16,22 +16,22 @@ export const partnershipContent = `
                 <div class="partners-grid">
                 <div class="info-item">
                     <i class="fas fa-industry"></i>
-                    <h3>鞍鋼集団</h3>
-                    <p>世界第3位の生産量を誇る総合鉄鋼メーカー。2021年に本鋼集団と合併し、鞍山鋼鉄と本渓鋼鉄の生産拠点を有する。</p>
+                    <h3>鞍鋼集団国際経済貿易有限公司<br><span style="font-size: 0.85em; color: var(--mid-gray);">（あんこうインターナショナル）</span></h3>
+                    <p>鞍鋼集団の海外業務を統括する完全子会社。国際貿易および経済協力を担当し、世界各国への鉄鋼製品の輸出を管理。</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-fire"></i>
-                    <h3>本鋼(本渓鋼鉄)</h3>
+                    <h3>本鋼集団有限公司</h3>
                     <p>鞍鋼集団傘下の主要生産拠点。高品質な普通鋼・特殊鋼の製造を担当。</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-mountain"></i>
-                    <h3>攀鋼長城特殊鋼</h3>
+                    <h3>攀鋼集団江油長城特殊鋼有限公司</h3>
                     <p>高品質な特殊鋼およびチタン・チタン合金の専門メーカー。</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-handshake"></i>
-                    <h3>鞍鋼集団日本</h3>
+                    <h3>鞍鋼集団日本株式会社<br><span style="font-size: 0.85em; color: var(--mid-gray);">（あんこうジャパン）</span></h3>
                     <p>鞍鋼インターナショナルの完全子会社。日本市場での協業パートナー。</p>
                 </div>
                 <div class="info-item">
