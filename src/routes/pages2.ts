@@ -6,7 +6,7 @@ export const partnershipContent = `
     <div class="container">
         <h2 class="section-title">株式会社萬橡和のパートナーシップ</h2>
         
-        <div style="text-align: center; margin: 3rem 0;">
+        <div style="margin: 3rem 0;">
             <img src="https://page.gensparksite.com/v1/base64_upload/9223223bcad5d8cc0580f149cc6fdb76" alt="パートナーシップ体制図" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
         </div>
 
@@ -62,52 +62,52 @@ export const businessModelContent = `
             </ul>
         </div>
 
-        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.3rem;">取引フロー</h3>
+        <h3 style="margin-bottom: 2rem; font-size: 1.3rem;">取引フロー</h3>
 
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
                 <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">①</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">見積・条件合意</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 窓口対応</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
                 <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">②</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">発注・前払い</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 契約・請求</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
                 <div style="font-size: 2rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.5rem;">③</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">生産手配</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">鞍鋼集団: 生産管理</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
                 <div style="font-size: 2rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.5rem;">④</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">大連港搬入</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">鞍鋼集団: 輸送手配</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
                 <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑤</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">海上輸送</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO: 海上輸送</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
                 <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑥</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">日本到着・通関</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO: 通関・関税</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
                 <div style="font-size: 2rem; font-weight: bold; color: #17a2b8; margin-bottom: 0.5rem;">⑦</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">国内配送・検収</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">COSCO / 萬橡和</p>
             </div>
 
-            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--primary-color);">
                 <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;">⑧</div>
                 <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">請求・支払い</h4>
                 <p style="font-size: 0.85rem; color: #666; margin: 0;">萬橡和: 請求・決済</p>
@@ -123,7 +123,7 @@ export const productsContent = `
     <div class="container">
         <h2 class="section-title">高品質な鉄鋼製品を幅広くご提供</h2>
         
-        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+        <div style="max-width: 800px; margin: 0 0 3rem 0;">
             <p style="font-size: 1.05rem; line-height: 1.8;">鞍鋼集団の主要製品を取り扱い、お客様のニーズに合わせた最適なソリューションを提供します。JIS認証取得済みの普通鋼から、高精度な特殊鋼、軽量・高強度のチタン合金まで、幅広い製品ラインナップを取り揃えております。</p>
         </div>
         
@@ -233,7 +233,7 @@ export const contactContent = `
 <section class="content-section">
     <div class="container">
         <div class="content-block">
-            <p class="lead" style="text-align: center;">製品に関するご質問やお見積りのご相談は、以下のフォームよりお気軽にお問い合わせください。</p>
+            <p class="lead">製品に関するご質問やお見積りのご相談は、以下のフォームよりお気軽にお問い合わせください。</p>
         </div>
 
         <div class="contact-form">

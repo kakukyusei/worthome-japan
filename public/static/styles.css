@@ -262,7 +262,7 @@ body {
 .intro-text-centered {
     max-width: 900px;
     margin: 2rem auto;
-    text-align: center;
+    text-align: left;
 }
 
 .intro-text-centered p {
@@ -383,7 +383,7 @@ body {
 .section-title {
     font-size: 1.8rem;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
     position: relative;
@@ -395,8 +395,8 @@ body {
     content: '';
     position: absolute;
     bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
     width: 60px;
     height: 2px;
     background: var(--accent-color);
@@ -417,7 +417,7 @@ body {
 }
 
 .info-item {
-    text-align: center;
+    text-align: left;
     padding: 2.5rem 2rem;
     background: var(--white);
     border: 1px solid var(--border-color);
@@ -461,7 +461,7 @@ body {
     background-position: center;
     color: var(--dark-color);
     padding: 3rem 2rem;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
@@ -635,7 +635,7 @@ body {
 ======================================== */
 
 .philosophy-intro {
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
 }
 
@@ -673,7 +673,7 @@ body {
 }
 
 .pillar-icon {
-    text-align: center;
+    text-align: left;
     font-size: 3.5rem;
     color: var(--primary-color);
     margin: 1.5rem 0;
@@ -683,7 +683,7 @@ body {
     color: var(--primary-color);
     font-size: 1.5rem;
     margin-bottom: 1.75rem;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -713,7 +713,7 @@ body {
     color: var(--primary-color);
     font-size: 1.6rem;
     margin-bottom: 1.75rem;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -742,7 +742,7 @@ body {
 ======================================== */
 
 .message-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem;
 }
 
@@ -755,7 +755,7 @@ body {
     font-size: 1.4rem;
     font-style: italic;
     color: var(--primary-color);
-    text-align: center;
+    text-align: left;
     margin: 3rem 0;
     padding: 2.5rem;
     background: var(--light-gray);
@@ -827,7 +827,7 @@ body {
     background: var(--light-gray);
     padding: 2rem 2.5rem;
     border-radius: 4px;
-    text-align: center;
+    text-align: left;
     min-width: 320px;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
@@ -971,7 +971,7 @@ body {
     background: var(--primary-color);
     color: var(--white);
     padding: 2.5rem 2rem;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1193,7 +1193,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s;
-    text-align: center;
+    text-align: left;
 }
 
 .btn-primary {
@@ -1218,7 +1218,7 @@ body {
 
 .cta-section {
     background: var(--dark-color);
-    text-align: center;
+    text-align: left;
     padding: 4rem 2rem;
     position: relative;
     color: var(--white);
@@ -1324,7 +1324,7 @@ body {
 }
 
 .footer-bottom {
-    text-align: center;
+    text-align: left;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 0.9rem;
