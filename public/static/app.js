@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // フォーム送信処理 (お問い合わせページ用)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // フォームデータの取得
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = Object.fromEntries(formData.entries());
             
             // バリデーション
-            if (!data.company || !data.name || !data.email || !data.message) {
+            if (!data.company || !data.name || !data.email || !data.category || !data.message) {
                 alert('必須項目を入力してください。');
                 return;
             }
@@ -63,12 +63,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // 実際の実装では、ここでAPIにデータを送信
-            console.log('送信データ:', data);
-            
-            // 成功メッセージ
-            alert('お問い合わせありがとうございます。\n内容を確認次第、担当者よりご連絡させていただきます。');
-            contactForm.reset();
+            // 送信ボタンを無効化
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送信中...';
+
+            try {
+                // APIにデータを送信
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    // 成功メッセージ
+                    alert('お問い合わせありがとうございます。\n担当者より3営業日以内にご連絡させていただきます。');
+                    contactForm.reset();
+                } else {
+                    // エラーメッセージ
+                    alert('エラー: ' + (result.error || '送信に失敗しました。もう一度お試しください。'));
+                }
+            } catch (error) {
+                console.error('送信エラー:', error);
+                alert('通信エラーが発生しました。もう一度お試しください。');
+            } finally {
+                // 送信ボタンを再有効化
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            }
         });
     }
 

@@ -14,7 +14,8 @@
     "git:commit": "git add . && git commit -m"
   },
   "dependencies": {
-    "hono": "^4.10.3"
+    "hono": "^4.10.3",
+    "resend": "^6.4.2"
   },
   "devDependencies": {
     "@hono/vite-build": "^1.2.0",

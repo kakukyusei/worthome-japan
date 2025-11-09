@@ -1,5 +1,7 @@
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/cloudflare-workers'
+import { cors } from 'hono/cors'
+import { Resend } from 'resend'
 import { getPageLayout } from './templates/layout'
 import { 
   homeContent, 
@@ -22,9 +24,16 @@ import {
   pangangTitaniumContent
 } from './routes/products'
 
-const app = new Hono()
+type Bindings = {
+  RESEND_API_KEY: string
+}
 
-// 静态文件服务
+const app = new Hono<{ Bindings: Bindings }>()
+
+// CORS設定 (APIエンドポイント用)
+app.use('/api/*', cors())
+
+// 静的ファイル配信
 app.use('/static/*', serveStatic({ root: './public' }))
 
 // 首页
@@ -88,6 +97,83 @@ app.get('/products/ankou-thick-plate', (c) => {
 // お問い合わせ
 app.get('/contact', (c) => {
   return c.html(getPageLayout('お問い合わせ', contactContent, 'contact'))
+})
+
+// お問い合わせフォーム送信API
+app.post('/api/contact', async (c) => {
+  try {
+    const body = await c.req.json()
+    const { company, name, email, phone, category, message } = body
+
+    // バリデーション
+    if (!company || !name || !email || !category || !message) {
+      return c.json({ error: '必須項目が入力されていません' }, 400)
+    }
+
+    // メールアドレス検証
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      return c.json({ error: '有効なメールアドレスを入力してください' }, 400)
+    }
+
+    // Resend APIキー取得
+    const resendApiKey = c.env.RESEND_API_KEY
+    if (!resendApiKey) {
+      console.error('RESEND_API_KEY is not configured')
+      return c.json({ error: 'メール送信設定が完了していません' }, 500)
+    }
+
+    const resend = new Resend(resendApiKey)
+
+    // カテゴリーの日本語表示
+    const categoryMap: { [key: string]: string } = {
+      estimate: 'お見積りのご依頼',
+      product: '製品に関するお問い合わせ',
+      partnership: 'パートナーシップに関するお問い合わせ',
+      other: 'その他'
+    }
+
+    // メール本文作成
+    const emailBody = `
+【WORTHOMEウェブサイトからのお問い合わせ】
+
+会社名: ${company}
+お名前: ${name}
+メールアドレス: ${email}
+電話番号: ${phone || '未入力'}
+お問い合わせ種類: ${categoryMap[category] || category}
+
+お問い合わせ内容:
+${message}
+
+---
+このメールはWORTHOME Japanウェブサイトのお問い合わせフォームから送信されました。
+送信日時: ${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}
+    `.trim()
+
+    // メール送信
+    const { data, error } = await resend.emails.send({
+      from: 'WORTHOME お問い合わせ <onboarding@resend.dev>',
+      to: ['kakukyusei@gmail.com'],
+      subject: `【お問い合わせ】${categoryMap[category] || category} - ${company}様`,
+      text: emailBody,
+    })
+
+    if (error) {
+      console.error('Resend API error:', error)
+      return c.json({ error: 'メール送信に失敗しました' }, 500)
+    }
+
+    console.log('Email sent successfully:', data)
+    return c.json({ 
+      success: true, 
+      message: 'お問い合わせを受け付けました。担当者より3営業日以内にご連絡いたします。' 
+    })
+
+  } catch (error) {
+    console.error('Contact form error:', error)
+    return c.json({ error: 'サーバーエラーが発生しました' }, 500)
+  }
 })
 
 export default app

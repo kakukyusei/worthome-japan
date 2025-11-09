@@ -282,11 +282,6 @@ export const contactContent = `
 
         <div class="contact-info">
             <h3><i class="fas fa-building"></i> 株式会社萬橡和</h3>
-            <p><i class="fas fa-map-marker-alt"></i> 打合せ拠点: 大阪市西区阿波座2-1-1 CAMCO西本町ビル10F(鞍鋼ジャパン内)</p>
-            <p style="margin-top: 1rem; font-size: 0.95rem;">
-                <i class="fas fa-info-circle"></i> 
-                お問い合わせ内容を確認次第、担当者より3営業日以内にご連絡させていただきます。
-            </p>
         </div>
     </div>
 </section>
