@@ -99,8 +99,12 @@ export const aboutContent = `
                         <td>丁 友(テイ ユウ)</td>
                     </tr>
                     <tr>
-                        <th><i class="fas fa-map-marker-alt"></i> 打合せ拠点</th>
-                        <td>大阪市西区阿波座2-1-1 CAMCO西本町ビル10F(鞍鋼ジャパン内)</td>
+                        <th><i class="fas fa-map-marker-alt"></i> 本社</th>
+                        <td>大阪府堺市堺区三国ヶ丘御幸通57-2 903</td>
+                    </tr>
+                    <tr>
+                        <th><i class="fas fa-map-marker-alt"></i> 鞍鋼オフィス</th>
+                        <td>大阪市西区阿波座2-1-1 CAMCO西本町ビル10F</td>
                     </tr>
                 </table>
             </div>
