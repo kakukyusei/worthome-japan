@@ -50,11 +50,10 @@ export const getFooter = () => `
         <div class="footer-content">
             <div class="footer-section">
                 <h3>株式会社萬橡和</h3>
-                <p>WORTHOME</p>
                 <p class="footer-address">
                     <i class="fas fa-map-marker-alt"></i>
-                    大阪市西区阿波座2-1-1<br>
-                    CAMCO西本町ビル10F(鞍鋼ジャパン内)
+                    本社: 大阪府堺市堺区三国ヶ丘御幸通57-2 903<br>
+                    鞍鋼オフィス: 大阪市西区阿波座2-1-1 CAMCO西本町ビル10F
                 </p>
             </div>
             <div class="footer-section">
