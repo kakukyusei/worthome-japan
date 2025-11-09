@@ -173,7 +173,7 @@ ${message}
     console.log('Email sent successfully:', data)
     return c.json({ 
       success: true, 
-      message: 'お問い合わせを受け付けました。担当者より3営業日以内にご連絡いたします。' 
+      message: 'お問い合わせいただき、誠にありがとうございます。担当者よりご連絡させていただきます。どうぞ宜しくお願い申し上げます。' 
     })
 
   } catch (error) {

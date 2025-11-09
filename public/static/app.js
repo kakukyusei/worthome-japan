@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const result = await response.json();
 
                 if (response.ok && result.success) {
-                    // 成功メッセージ
-                    alert('お問合せありがとうございます。\n担当者より3営業日以内にご連絡させていただきます。');
+                    // 成功メッセージ（サーバーからのメッセージを表示）
+                    alert(result.message || 'お問い合わせいただき、誠にありがとうございます。担当者よりご連絡させていただきます。どうぞ宜しくお願い申し上げます。');
                     contactForm.reset();
                 } else {
                     // エラーメッセージ（詳細情報も表示）
