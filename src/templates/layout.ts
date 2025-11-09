@@ -37,7 +37,7 @@ export const getNavbar = (activePage: string = '') => `
                     <li><a href="/products/pangang-titanium" ${activePage === 'products-pangang-titanium' ? 'class="active"' : ''}>攀鋼チタン・チタン合金</a></li>
                 </ul>
             </li>
-            <li><a href="/contact" ${activePage === 'contact' ? 'class="active"' : ''}>お問い合わせ</a></li>
+            <li><a href="/contact" ${activePage === 'contact' ? 'class="active"' : ''}>お問合せ</a></li>
         </ul>
     </div>
 </nav>
@@ -74,9 +74,9 @@ export const getFooter = () => `
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>お問い合わせ</h4>
+                <h4>お問合せ</h4>
                 <ul>
-                    <li><a href="/contact">お問い合わせフォーム</a></li>
+                    <li><a href="/contact">お問合せフォーム</a></li>
                 </ul>
             </div>
         </div>

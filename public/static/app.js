@@ -83,11 +83,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (response.ok && result.success) {
                     // 成功メッセージ
-                    alert('お問い合わせありがとうございます。\n担当者より3営業日以内にご連絡させていただきます。');
+                    alert('お問合せありがとうございます。\n担当者より3営業日以内にご連絡させていただきます。');
                     contactForm.reset();
                 } else {
-                    // エラーメッセージ
-                    alert('エラー: ' + (result.error || '送信に失敗しました。もう一度お試しください。'));
+                    // エラーメッセージ（詳細情報も表示）
+                    let errorMsg = result.error || '送信に失敗しました。もう一度お試しください。';
+                    if (result.details) {
+                        console.error('エラー詳細:', result.details);
+                        errorMsg += '\n\n詳細: ' + result.details;
+                    }
+                    alert('エラー: ' + errorMsg);
                 }
             } catch (error) {
                 console.error('送信エラー:', error);

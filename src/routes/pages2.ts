@@ -279,10 +279,6 @@ export const contactContent = `
                 </button>
             </form>
         </div>
-
-        <div class="contact-info">
-            <h3><i class="fas fa-building"></i> 株式会社萬橡和</h3>
-        </div>
     </div>
 </section>
 `;

@@ -94,9 +94,9 @@ app.get('/products/ankou-thick-plate', (c) => {
   return c.redirect('/products/ankou-steel', 301)
 })
 
-// お問い合わせ
+// お問合せ
 app.get('/contact', (c) => {
-  return c.html(getPageLayout('お問い合わせ', contactContent, 'contact'))
+  return c.html(getPageLayout('お問合せ', contactContent, 'contact'))
 })
 
 // お問い合わせフォーム送信API
@@ -118,9 +118,12 @@ app.post('/api/contact', async (c) => {
 
     // Resend APIキー取得
     const resendApiKey = c.env.RESEND_API_KEY
-    if (!resendApiKey) {
-      console.error('RESEND_API_KEY is not configured')
-      return c.json({ error: 'メール送信設定が完了していません' }, 500)
+    if (!resendApiKey || resendApiKey === 're_dummy_key_replace_with_real_key') {
+      console.error('RESEND_API_KEY is not configured or is using dummy key')
+      return c.json({ 
+        error: 'メール送信設定が完了していません。管理者にお問い合わせください。',
+        details: 'RESEND_API_KEY が設定されていないか、ダミーキーが使用されています。'
+      }, 500)
     }
 
     const resend = new Resend(resendApiKey)
@@ -161,7 +164,10 @@ ${message}
 
     if (error) {
       console.error('Resend API error:', error)
-      return c.json({ error: 'メール送信に失敗しました' }, 500)
+      return c.json({ 
+        error: 'メール送信に失敗しました。管理者にお問い合わせください。',
+        details: error.message || 'Resend API エラー'
+      }, 500)
     }
 
     console.log('Email sent successfully:', data)
@@ -172,7 +178,11 @@ ${message}
 
   } catch (error) {
     console.error('Contact form error:', error)
-    return c.json({ error: 'サーバーエラーが発生しました' }, 500)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    return c.json({ 
+      error: 'サーバーエラーが発生しました。管理者にお問い合わせください。',
+      details: errorMessage
+    }, 500)
   }
 })
 
